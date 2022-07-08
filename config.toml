@@ -2,3 +2,39 @@ baseURL = "http://kompowiec.github.io/blog"
 languageCode = "en-us"
 title = "kompowiec blog"
 theme = "smol"
+
+# Parameters
+[params]
+    subtitle = "Your blog subtitle goes here!"
+    dateFmt = "02.01.2006 15:04"
+
+# Header
+[menu]
+  [[menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        url = "/posts/"
+        weight = 1 
+
+  [[menu.main]]
+        identifier = "categories"
+        name = "Categories"
+        url = "/categories/"
+        weight = 2 
+
+  [[menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags/"
+        weight = 3
+
+# Footer
+  [[menu.footer]]
+        name = "Github"
+        url = "https://github.com/kompowiec"
+        weight = 1 
+
+    [[menu.footer]]
+        name = "Imprint"
+        url = "/imprint"
+        weight = 3 
