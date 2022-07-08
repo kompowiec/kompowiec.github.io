@@ -2,3 +2,13 @@ baseURL = "http://kompowiec.github.io/"
 languageCode = "en-us"
 title = "kompowiec blog"
 theme = "bare"
+
+[params]
+mainSections = ["posts"]
+author = "kompowiec"
+email = "tom@tomforb.es"
+description = ' '
+postcss = true
+# Include the author name in the <title> of articles
+includeAuthorInTitle = true
+hero_colour = "info"
