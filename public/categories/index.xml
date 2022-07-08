@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on kompowiec blog</title>
-    <link>http://kompowiec.github.io/blog/categories/</link>
+    <link>http://kompowiec.github.io/categories/</link>
     <description>Recent content in Categories on kompowiec blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Jul 2022 13:50:39 +0200</lastBuildDate><atom:link href="http://kompowiec.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Jul 2022 13:50:39 +0200</lastBuildDate><atom:link href="http://kompowiec.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>default</title>
-      <link>http://kompowiec.github.io/blog/categories/default/</link>
+      <link>http://kompowiec.github.io/categories/default/</link>
       <pubDate>Fri, 08 Jul 2022 13:50:39 +0200</pubDate>
       
-      <guid>http://kompowiec.github.io/blog/categories/default/</guid>
+      <guid>http://kompowiec.github.io/categories/default/</guid>
       <description></description>
     </item>
     
