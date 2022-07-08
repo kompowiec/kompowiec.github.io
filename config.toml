@@ -1,4 +1,4 @@
-baseURL = "http://kompowiec.github.io/blog"
+baseURL = "http://kompowiec.github.io/"
 languageCode = "en-us"
 title = "kompowiec blog"
 theme = "smol"
