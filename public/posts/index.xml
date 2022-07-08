@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on kompowiec blog</title>
-    <link>http://kompowiec.github.io/posts/</link>
+    <link>http://kompowiec.github.io/blog/posts/</link>
     <description>Recent content in Posts on kompowiec blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Jul 2022 11:47:54 +0200</lastBuildDate><atom:link href="http://kompowiec.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Jul 2022 13:50:39 +0200</lastBuildDate><atom:link href="http://kompowiec.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>http://kompowiec.github.io/posts/my-first-post/</link>
-      <pubDate>Fri, 08 Jul 2022 11:47:54 +0200</pubDate>
+      <link>http://kompowiec.github.io/blog/posts/2022-07-08-my-first-post/</link>
+      <pubDate>Fri, 08 Jul 2022 13:50:39 +0200</pubDate>
       
-      <guid>http://kompowiec.github.io/posts/my-first-post/</guid>
+      <guid>http://kompowiec.github.io/blog/posts/2022-07-08-my-first-post/</guid>
       <description></description>
     </item>
     
