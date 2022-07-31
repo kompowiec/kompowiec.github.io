@@ -1,40 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>http://kompowiec.github.io/categories/</loc>
-    <lastmod>2022-07-08T13:50:39+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kompowiec.github.io/tags/default/</loc>
-    <lastmod>2022-07-08T13:50:39+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kompowiec.github.io/categories/default/</loc>
-    <lastmod>2022-07-08T13:50:39+02:00</lastmod>
-  </url>
-  
-  <url>
+    <loc>http://kompowiec.github.io/posts/fa/</loc>
+    <lastmod>2022-07-31T02:26:36+02:00</lastmod>
+  </url><url>
     <loc>http://kompowiec.github.io/</loc>
-    <lastmod>2022-07-08T13:50:39+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kompowiec.github.io/posts/2022-07-08-my-first-post/</loc>
-    <lastmod>2022-07-08T13:50:39+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-07-31T02:26:36+02:00</lastmod>
+  </url><url>
     <loc>http://kompowiec.github.io/posts/</loc>
-    <lastmod>2022-07-08T13:50:39+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2022-07-31T02:26:36+02:00</lastmod>
+  </url><url>
+    <loc>http://kompowiec.github.io/categories/</loc>
+  </url><url>
     <loc>http://kompowiec.github.io/tags/</loc>
-    <lastmod>2022-07-08T13:50:39+02:00</lastmod>
   </url>
-  
 </urlset>

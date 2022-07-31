@@ -5,16 +5,6 @@
     <link>http://kompowiec.github.io/tags/</link>
     <description>Recent content in Tags on kompowiec blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 08 Jul 2022 13:50:39 +0200</lastBuildDate><atom:link href="http://kompowiec.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>default</title>
-      <link>http://kompowiec.github.io/tags/default/</link>
-      <pubDate>Fri, 08 Jul 2022 13:50:39 +0200</pubDate>
-      
-      <guid>http://kompowiec.github.io/tags/default/</guid>
-      <description></description>
-    </item>
-    
+    <language>en-us</language><atom:link href="http://kompowiec.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -5,7 +5,7 @@ theme = "smol"
 
 # Parameters
 [params]
-    subtitle = "Your blog subtitle goes here!"
+    subtitle = "freetard, libtard, buddhist"
     dateFmt = "02.01.2006 15:04"
 
 # Header
@@ -32,9 +32,26 @@ theme = "smol"
   [[menu.footer]]
         name = "Github"
         url = "https://github.com/kompowiec"
-        weight = 1 
+        weight = 1
 
-    [[menu.footer]]
-        name = "Imprint"
-        url = "/imprint"
-        weight = 3 
+  [[menu.footer]]
+        name = "Mastodon"
+        url = "https://social.snopyta.org/@kompowiec2"
+        weight = 1
+
+  [[menu.footer]]
+        name = "Matrix"
+        url = "https://matrix.to/#/@kompowiec2:midov.pl"
+        weight = 1
+
+  [[menu.footer]]
+        name = "IRC [PL]"
+        url = "https://rentry.co/polska-knajpa"
+        weight = 1
+
+  [[menu.footer]]
+        name = "XMPP"
+        url = "https://compliance.conversations.im/badge/jabbim.cz"
+        weight = 1
+
+
