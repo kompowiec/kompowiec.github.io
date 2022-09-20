@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
   <url>
     <loc>http://kompowiec.github.io/posts/fa/</loc>
     <lastmod>2022-07-31T02:26:36+02:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>http://kompowiec.github.io/</loc>
     <lastmod>2022-07-31T02:26:36+02:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>http://kompowiec.github.io/posts/</loc>
     <lastmod>2022-07-31T02:26:36+02:00</lastmod>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>http://kompowiec.github.io/categories/</loc>
-  </url><url>
+  </url>
+  
+  <url>
     <loc>http://kompowiec.github.io/tags/</loc>
   </url>
+  
 </urlset>

@@ -7,7 +7,8 @@ theme = "smol"
 [params]
     subtitle = "freetard, libtard, buddhist"
     dateFmt = "02.01.2006 15:04"
-
+  	AuthorName = 'kompowiec2'
+		copyright = "Copyright 2008-{year} kompowiec2 Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved"
 # Header
 [menu]
   [[menu.main]]
@@ -48,10 +49,3 @@ theme = "smol"
         name = "IRC [PL]"
         url = "https://rentry.co/polska-knajpa"
         weight = 1
-
-  [[menu.footer]]
-        name = "XMPP"
-        url = "https://compliance.conversations.im/badge/jabbim.cz"
-        weight = 1
-
-
