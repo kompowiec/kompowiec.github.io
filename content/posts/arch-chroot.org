@@ -1,0 +1,67 @@
+---
+title: "Install Arch Linux from existing Linux"
+date: 2022-09-20T16:08:00+02:00
+draft: true
+---
+[[https://gist.githubusercontent.com/kompowiec/93cdd6a9752f7f8a75e65b82507b13e0/raw/bfd0bc9ce0fb2487add2548860be5b2a35667e32/lpm.svg]]
+
+I really hate software management in linux. Is too much and it requires at least a basic knowledge of each of them in the event of a lack of application for your distribution. Also i don't like arch because of bleeding-edge. My solution?
+1. Install any fixed distro (Debian, RHEL, slackware)
+2. Chroot arch.
+
+Download arch bootstrap:
+#+BEGIN_SRC bash
+cd /tmp
+wget https://geo.mirror.pkgbuild.com/iso/latest/archlinux-bootstrap-x86_64.tar.gz
+#+END_SRC bash
+
+unpack:
+#+BEGIN_SRC bash
+tar xzf archlinux-bootstrap-x86_64.tar.gz --numeric-owner
+#+END_SRC bash
+
+chroot:
+#+BEGIN_SRC bash
+mount --bind /tmp/root.x86_64 /tmp/root.x86_64
+cd /tmp/root.x86_64
+cp /etc/resolv.conf etc
+mount -t proc /proc proc
+mount --make-rslave --rbind /sys sys
+mount --make-rslave --rbind /dev dev
+mount --make-rslave --rbind /run run    # (assuming /run exists on the system)
+chroot /tmp/root.x86_64 /bin/bash #run
+#+END_SRC bash
+
+start!
+#+BEGIN_SRC bash
+sed -i 's/^#Server/Server/' etc/pacman.d/mirrorlist #uncomment list
+pacman-key --init #initalizing pacman keyring
+pacman -Syu #update
+pacman-key --populate #veryfing the master keys
+pacman -S --needed base-devel git go
+#+END_SRC bash
+
+configuration for yay:
+#+BEGIN_SRC bash
+passwd root
+useradd -m -g users -G wheel,floppy,audio,video,power,lp,scanner -s /bin/bash username
+passwd username
+cd /opt
+git clone https://aur.archlinux.org/yay.git
+chmod 777 -R yay/
+cd yay
+sudo su username
+makepkg -si
+#+END_SRC bash
+
+run graphics
+#+BEGIN_SRC bash
+xhost +local:
+export DISPLAY=:0
+#+END_SRC bash
+
+* References
+- https://wiki.archlinux.org/title/Install_Arch_Linux_from_existing_Linux#Method_A:_Using_the_bootstrap_tarball_(recommended)
+- https://wiki.archlinux.org/title/mirrors#Ranking_an_existing_mirror_list 
+- OPTIONAL: https://wiki.archlinux.org/title/sudo#Using_visudo
+- https://wiki.archlinux.org/title/Chroot#Run_graphical_applications_from_chroot
