@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style type=text/css>body{font-family:monospace;}</style>
+	<title>Install Arch Linux from existing Linux</title>
+	
+	
+	<link rel="stylesheet" href="/css/style.css">
+	
+	
+</head>
+<body>
+	<header>
+	====================<br>
+	== <a href="http://kompowiec.github.io/">kompowiec blog</a> ==<br>
+	====================
+	<div style="float: right;">freetard, libtard, buddhist</div><br>
+	<p>
+	<nav>
+			<a href="/"><b>Start</b></a>.
+			
+			
+			<a href="/posts/"><b>Posts</b></a>.
+			
+			<a href="/categories/"><b>Categories</b></a>.
+			
+			<a href="/tags/"><b>Tags</b></a>.
+			
+	</nav>
+	</p>
+	
+</header>
+
+	
+	<main>
+		<article>
+			<h1>Install Arch Linux from existing Linux</h1>
+			<b><time>20.09.2022 16:08</time></b>
+		       
+
+			<div>
+				
+<p><img src="https://gist.githubusercontent.com/kompowiec/93cdd6a9752f7f8a75e65b82507b13e0/raw/bfd0bc9ce0fb2487add2548860be5b2a35667e32/lpm.svg" alt="https://gist.githubusercontent.com/kompowiec/93cdd6a9752f7f8a75e65b82507b13e0/raw/bfd0bc9ce0fb2487add2548860be5b2a35667e32/lpm.svg" title="https://gist.githubusercontent.com/kompowiec/93cdd6a9752f7f8a75e65b82507b13e0/raw/bfd0bc9ce0fb2487add2548860be5b2a35667e32/lpm.svg" /></p>
+<p>
+I really hate software management in linux. Is too much and it requires at least a basic knowledge of each of them in the event of a lack of application for your distribution. Also i don&#39;t like arch because of bleeding-edge. My solution?</p>
+<ol>
+<li>
+<p>Install any fixed distro (Debian, RHEL, slackware)</p>
+</li>
+<li>
+<p>Chroot arch.</p>
+</li>
+</ol>
+<p>Download arch bootstrap:</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd /tmp
+wget https://geo.mirror.pkgbuild.com/iso/latest/archlinux-bootstrap-x86_64.tar.gz</code></pre></div>
+</div>
+<p>
+unpack:</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tar xzf archlinux-bootstrap-x86_64.tar.gz --numeric-owner</code></pre></div>
+</div>
+<p>
+chroot:</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mount --bind /tmp/root.x86_64 /tmp/root.x86_64
+cd /tmp/root.x86_64
+cp /etc/resolv.conf etc
+mount -t proc /proc proc
+mount --make-rslave --rbind /sys sys
+mount --make-rslave --rbind /dev dev
+mount --make-rslave --rbind /run run    <span style="color:#75715e"># (assuming /run exists on the system)</span>
+chroot /tmp/root.x86_64 /bin/bash <span style="color:#75715e">#run</span></code></pre></div>
+</div>
+<p>
+start!</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sed -i <span style="color:#e6db74">&#39;s/^#Server/Server/&#39;</span> etc/pacman.d/mirrorlist <span style="color:#75715e">#uncomment list</span>
+pacman-key --init <span style="color:#75715e">#initalizing pacman keyring</span>
+pacman -Syu <span style="color:#75715e">#update</span>
+pacman-key --populate <span style="color:#75715e">#veryfing the master keys</span>
+pacman -S --needed base-devel git go</code></pre></div>
+</div>
+<p>
+configuration for yay:</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">passwd root
+useradd -m -g users -G wheel,floppy,audio,video,power,lp,scanner -s /bin/bash username
+passwd username
+cd /opt
+git clone https://aur.archlinux.org/yay.git
+chmod <span style="color:#ae81ff">777</span> -R yay/
+cd yay
+sudo su username
+makepkg -si</code></pre></div>
+</div>
+<p>
+run graphics</p>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">xhost +local:
+export DISPLAY<span style="color:#f92672">=</span>:0</code></pre></div>
+</div>
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+References
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<ul>
+<li>
+<p><a href="https://wiki.archlinux.org/title/Install_Arch_Linux_from_existing_Linux#Method_A:_Using_the_bootstrap_tarball_(recommended)">https://wiki.archlinux.org/title/Install_Arch_Linux_from_existing_Linux#Method_A:_Using_the_bootstrap_tarball_(recommended)</a></p>
+</li>
+<li>
+<p><a href="https://wiki.archlinux.org/title/mirrors#Ranking_an_existing_mirror_list">https://wiki.archlinux.org/title/mirrors#Ranking_an_existing_mirror_list</a> </p>
+</li>
+<li>
+<p>OPTIONAL: <a href="https://wiki.archlinux.org/title/sudo#Using_visudo">https://wiki.archlinux.org/title/sudo#Using_visudo</a></p>
+</li>
+<li>
+<p><a href="https://wiki.archlinux.org/title/Chroot#Run_graphical_applications_from_chroot">https://wiki.archlinux.org/title/Chroot#Run_graphical_applications_from_chroot</a></p>
+</li>
+</ul>
+</div>
+</div>
+
+			</div>
+		</article>
+	</main>
+<aside>
+	<div>
+		<div>
+			<h3>LATEST POSTS</h3>
+		</div>
+		<div>
+			<ul>
+				
+				<li><a href="/posts/arch-chroot/">Install Arch Linux from existing Linux</a></li>
+				
+				<li><a href="/posts/fa/">How i healed The Fearful-Avoidant/Disorganized attachment style within 3 months</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</aside>
+
+
+	<footer>
+	<p>&copy; 2022 <a href="http://kompowiec.github.io/"><b>kompowiec blog</b></a>.
+	<a href="https://github.com/kompowiec"><b>Github</b></a>.
+	<a href="https://rentry.co/polska-knajpa"><b>IRC [PL]</b></a>.
+	<a href="https://social.snopyta.org/@kompowiec2"><b>Mastodon</b></a>.
+	<a href="https://matrix.to/#/@kompowiec2:midov.pl"><b>Matrix</b></a>.
+	</p>
+</footer>
+
+</body>
+</html>
