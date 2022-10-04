@@ -71,9 +71,9 @@ chroot:</p>
 cd /tmp/root.x86_64
 cp /etc/resolv.conf etc
 mount -t proc /proc proc
-mount --make-rslave --rbind /sys sys
-mount --make-rslave --rbind /dev dev
-mount --make-rslave --rbind /run run    <span style="color:#75715e"># (assuming /run exists on the system)</span>
+mount --rbind /sys sys
+mount --rbind /dev dev
+mount --rbind /run run    <span style="color:#75715e"># (assuming /run exists on the system)</span>
 chroot /tmp/root.x86_64 /bin/bash <span style="color:#75715e">#run</span></code></pre></div>
 </div>
 <p>
@@ -82,20 +82,39 @@ start!</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sed -i <span style="color:#e6db74">&#39;s/^#Server/Server/&#39;</span> etc/pacman.d/mirrorlist <span style="color:#75715e">#uncomment list</span>
 pacman-key --init <span style="color:#75715e">#initalizing pacman keyring</span>
 pacman -Syu <span style="color:#75715e">#update</span>
-pacman-key --populate <span style="color:#75715e">#veryfing the master keys</span>
-pacman -S --needed base-devel git go</code></pre></div>
+pacman-key --populate <span style="color:#75715e">#veryfing the master keys</span></code></pre></div>
 </div>
 <p>
-configuration for yay:</p>
+configuration for paru:</p>
+<ol>
+<li>
+<p>create user</p>
+</li>
+</ol>
 <div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">passwd root
-useradd -m -g users -G wheel,floppy,audio,video,power,lp,scanner -s /bin/bash username
-passwd username
-cd /opt
-git clone https://aur.archlinux.org/yay.git
-chmod <span style="color:#ae81ff">777</span> -R yay/
-cd yay
-sudo su username
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">useradd -m -g users -G wheel,floppy,audio,video,power,lp,scanner -s /bin/bash username
+passwd arch
+pacman -S --needed base-devel git cargo vi
+su username</code></pre></div>
+</div>
+<ol>
+<li>
+<p>add user to sudo:</p>
+</li>
+</ol>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sed -i <span style="color:#e6db74">&#39;s/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL)/&#39;</span> etc/sudoers <span style="color:#75715e">#uncomment list</span></code></pre></div>
+</div>
+<ol>
+<li>
+<p>Install paru</p>
+</li>
+</ol>
+<div class="src src-bash">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd /opt
+git clone https://aur.archlinux.org/paru.git
+chmod <span style="color:#ae81ff">777</span> -R paru/
+cd paru
 makepkg -si</code></pre></div>
 </div>
 <p>
@@ -117,7 +136,7 @@ References
 <p><a href="https://wiki.archlinux.org/title/mirrors#Ranking_an_existing_mirror_list">https://wiki.archlinux.org/title/mirrors#Ranking_an_existing_mirror_list</a> </p>
 </li>
 <li>
-<p>OPTIONAL: <a href="https://wiki.archlinux.org/title/sudo#Using_visudo">https://wiki.archlinux.org/title/sudo#Using_visudo</a></p>
+<p><a href="https://wiki.archlinux.org/title/sudo#Using_visudo">https://wiki.archlinux.org/title/sudo#Using_visudo</a></p>
 </li>
 <li>
 <p><a href="https://wiki.archlinux.org/title/Chroot#Run_graphical_applications_from_chroot">https://wiki.archlinux.org/title/Chroot#Run_graphical_applications_from_chroot</a></p>

@@ -26,9 +26,9 @@ mount --bind /tmp/root.x86_64 /tmp/root.x86_64
 cd /tmp/root.x86_64
 cp /etc/resolv.conf etc
 mount -t proc /proc proc
-mount --make-rslave --rbind /sys sys
-mount --make-rslave --rbind /dev dev
-mount --make-rslave --rbind /run run    # (assuming /run exists on the system)
+mount --rbind /sys sys
+mount --rbind /dev dev
+mount --rbind /run run    # (assuming /run exists on the system)
 chroot /tmp/root.x86_64 /bin/bash #run
 #+END_SRC bash
 
@@ -38,19 +38,26 @@ sed -i 's/^#Server/Server/' etc/pacman.d/mirrorlist #uncomment list
 pacman-key --init #initalizing pacman keyring
 pacman -Syu #update
 pacman-key --populate #veryfing the master keys
-pacman -S --needed base-devel git go
 #+END_SRC bash
 
-configuration for yay:
+configuration for paru:
+1) create user
 #+BEGIN_SRC bash
-passwd root
 useradd -m -g users -G wheel,floppy,audio,video,power,lp,scanner -s /bin/bash username
-passwd username
+passwd arch
+pacman -S --needed base-devel git cargo vi
+su username
+#+END_SRC bash
+2) add user to sudo:
+#+BEGIN_SRC bash
+sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL)/' etc/sudoers #uncomment list
+#+END_SRC bash
+3) Install paru
+#+BEGIN_SRC bash
 cd /opt
-git clone https://aur.archlinux.org/yay.git
-chmod 777 -R yay/
-cd yay
-sudo su username
+git clone https://aur.archlinux.org/paru.git
+chmod 777 -R paru/
+cd paru
 makepkg -si
 #+END_SRC bash
 
@@ -63,5 +70,5 @@ export DISPLAY=:0
 * References
 - https://wiki.archlinux.org/title/Install_Arch_Linux_from_existing_Linux#Method_A:_Using_the_bootstrap_tarball_(recommended)
 - https://wiki.archlinux.org/title/mirrors#Ranking_an_existing_mirror_list 
-- OPTIONAL: https://wiki.archlinux.org/title/sudo#Using_visudo
+- https://wiki.archlinux.org/title/sudo#Using_visudo
 - https://wiki.archlinux.org/title/Chroot#Run_graphical_applications_from_chroot
