@@ -6,7 +6,23 @@
     <description>Recent content in Posts on kompowiec blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 20 Sep 2022 16:08:00 +0200</lastBuildDate><atom:link href="http://kompowiec.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 31 Oct 2022 17:00:00 +0200</lastBuildDate><atom:link href="http://kompowiec.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EmacsOS, on the example of arch</title>
+      <link>http://kompowiec.github.io/posts/emacsos/</link>
+      <pubDate>Mon, 31 Oct 2022 17:00:00 +0200</pubDate>
+      
+      <guid>http://kompowiec.github.io/posts/emacsos/</guid>
+      <description>tested on VirtualBox:
+Installation of the base system  format disk
+cfdisk  Make the filesystem
+mkfs.ext4 /dev/sda1  Mount the newly created filesystem
+mount /dev/sda2 /mnt  Install Packages
+pacstrap /mnt base linux linux-firmware grub dhcpcd  Configutaion
+genfstab -U /mnt &amp;gt; /mnt/etc/fstab arch-chroot /mnt grub-install --target=i386-pc /dev/sda grub-mkconfig -o /boot/grub/grub.cfg systemctl enable dhcpcd useradd -mG wheel user passwd user reboot  run internet
+ip link set enp0s3 up    First run  pacman -S emacs    Use as your shell  add to your .</description>
+    </item>
+    
     <item>
       <title>Install Arch Linux from existing Linux</title>
       <link>http://kompowiec.github.io/posts/arch-chroot/</link>

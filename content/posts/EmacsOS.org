@@ -1,0 +1,69 @@
+---
+title: "EmacsOS, on the example of arch"
+date: 2022-10-31T17:00:00+02:00
+draft: true
+---
+tested on VirtualBox:
+
+* Installation of the base system
+format disk
+#+BEGIN_SRC bash
+cfdisk
+#+END_SRC bash
+Make the filesystem
+#+BEGIN_SRC bash
+mkfs.ext4 /dev/sda1
+#+END_SRC bash
+Mount the newly created filesystem
+#+BEGIN_SRC bash
+mount /dev/sda2 /mnt
+#+END_SRC bash
+Install Packages
+#+BEGIN_SRC bash
+pacstrap /mnt base linux linux-firmware grub dhcpcd
+#+END_SRC bash
+Configutaion
+#+BEGIN_SRC bash
+genfstab -U /mnt > /mnt/etc/fstab
+arch-chroot /mnt
+grub-install --target=i386-pc /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg
+systemctl enable dhcpcd
+useradd -mG wheel user
+passwd user
+reboot
+#+END_SRC bash
+run internet
+#+BEGIN_SRC bash
+ip link set enp0s3 up
+#+END_SRC bash
+* First run
+#+BEGIN_SRC bash
+pacman -S emacs
+#+END_SRC bash
+* Use as your shell
+add to your .bashrc
+#+BEGIN_SRC bash
+emacs -f eshell
+#+END_SRC bash
+* Graphics system installation - EXWM
+#+BEGIN_SRC bash
+pacman -S xorg xorg-xinit
+#+END_SRC bash
+In your emacs init file, add:
+#+BEGIN_SRC lisp
+(require 'exwm)
+(require 'exwm-config)
+(exwm-config-default)
+#+END_SRC lisp
+Run X:
+#+BEGIN_SRC bash
+startx /bin/emacs
+#+END_SRC bash
+* Sound system installation
+#+BEGIN_SRC bash
+pacman -S mpd
+#+END_SRC bash
+* References
+- [[https://gist.github.com/MaFeLP/3bd2484299a71ec967630c1155ad8d1f][ArchLinux-Installation-Speedrun.md]]
+- [[https://blog.vivekhaldar.com/post/6290492469/emacs-as-a-login-shell][Emacs as a login shell]]
