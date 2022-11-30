@@ -69,11 +69,13 @@ Installation of the base system
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">genfstab -U /mnt &gt; /mnt/etc/fstab
 arch-chroot /mnt
-grub-install --target<span style="color:#f92672">=</span>i386-pc /dev/sda
+grub-install --target<span style="color:#f92672">=</span>i386-pc /dev/sda --force
 grub-mkconfig -o /boot/grub/grub.cfg
 systemctl enable dhcpcd
 useradd -mG wheel user
 passwd user
+passwd
+exit
 reboot</code></pre></div>
 </div>
 <p>run internet</p>
@@ -117,9 +119,13 @@ Graphics system installation - EXWM
 (<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;exwm-config</span>)
 (exwm-config-default)</code></pre></div>
 </div>
-<p>Run X:</p>
+<p>Run X (or add to your .bashrc)</p>
 <div class="src src-bash">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">startx /bin/emacs</code></pre></div>
+</div>
+<p>install exwm:</p>
+<div class="src src-lisp">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp">M+X package-install RET exwm</code></pre></div>
 </div>
 </div>
 </div>
@@ -144,6 +150,18 @@ References
 </li>
 <li>
 <p><a href="https://blog.vivekhaldar.com/post/6290492469/emacs-as-a-login-shell">Emacs as a login shell</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-2">
+<h2 id="headline-7">
+Further reading
+</h2>
+<div id="outline-text-headline-7" class="outline-text-2">
+<ul>
+<li>
+<p><a href="https://writequit.org/eos/eos-core.html">The Emacs Operating System (EOS)</a></p>
 </li>
 </ul>
 </div>

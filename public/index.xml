@@ -19,7 +19,7 @@ cfdisk  Make the filesystem
 mkfs.ext4 /dev/sda1  Mount the newly created filesystem
 mount /dev/sda2 /mnt  Install Packages
 pacstrap /mnt base linux linux-firmware grub dhcpcd  Configutaion
-genfstab -U /mnt &amp;gt; /mnt/etc/fstab arch-chroot /mnt grub-install --target=i386-pc /dev/sda grub-mkconfig -o /boot/grub/grub.cfg systemctl enable dhcpcd useradd -mG wheel user passwd user reboot  run internet
+genfstab -U /mnt &amp;gt; /mnt/etc/fstab arch-chroot /mnt grub-install --target=i386-pc /dev/sda --force grub-mkconfig -o /boot/grub/grub.cfg systemctl enable dhcpcd useradd -mG wheel user passwd user passwd exit reboot  run internet
 ip link set enp0s3 up    First run  pacman -S emacs    Use as your shell  add to your .</description>
     </item>
     

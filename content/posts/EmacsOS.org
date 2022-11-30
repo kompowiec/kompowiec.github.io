@@ -26,11 +26,13 @@ Configutaion
 #+BEGIN_SRC bash
 genfstab -U /mnt > /mnt/etc/fstab
 arch-chroot /mnt
-grub-install --target=i386-pc /dev/sda
+grub-install --target=i386-pc /dev/sda --force
 grub-mkconfig -o /boot/grub/grub.cfg
 systemctl enable dhcpcd
 useradd -mG wheel user
 passwd user
+passwd
+exit
 reboot
 #+END_SRC bash
 run internet
@@ -56,10 +58,14 @@ In your emacs init file, add:
 (require 'exwm-config)
 (exwm-config-default)
 #+END_SRC lisp
-Run X:
+Run X (or add to your .bashrc)
 #+BEGIN_SRC bash
 startx /bin/emacs
 #+END_SRC bash
+install exwm:
+#+BEGIN_SRC lisp
+M+X package-install RET exwm
+#+END_SRC lisp
 * Sound system installation
 #+BEGIN_SRC bash
 pacman -S mpd
@@ -67,3 +73,5 @@ pacman -S mpd
 * References
 - [[https://gist.github.com/MaFeLP/3bd2484299a71ec967630c1155ad8d1f][ArchLinux-Installation-Speedrun.md]]
 - [[https://blog.vivekhaldar.com/post/6290492469/emacs-as-a-login-shell][Emacs as a login shell]]
+* Further reading
+- [[https://writequit.org/eos/eos-core.html][The Emacs Operating System (EOS)]]

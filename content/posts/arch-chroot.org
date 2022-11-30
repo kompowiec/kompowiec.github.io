@@ -72,3 +72,6 @@ export DISPLAY=:0
 - https://wiki.archlinux.org/title/mirrors#Ranking_an_existing_mirror_list 
 - https://wiki.archlinux.org/title/sudo#Using_visudo
 - https://wiki.archlinux.org/title/Chroot#Run_graphical_applications_from_chroot
+* Further reading
+- [[http://www.packagekit.org/][PackageKit]]
+- [[https://bedrocklinux.org/][Bedrock linux]]
