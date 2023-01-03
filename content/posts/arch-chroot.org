@@ -45,7 +45,7 @@ configuration for paru:
 #+BEGIN_SRC bash
 useradd -m -g users -G wheel,floppy,audio,video,power,lp,scanner -s /bin/bash username
 passwd arch
-pacman -S --needed base-devel git cargo vi
+pacman -S --needed base base-devel git cargo vi
 su username
 #+END_SRC bash
 2) add user to sudo:

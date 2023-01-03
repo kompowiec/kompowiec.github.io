@@ -5,47 +5,47 @@ theme = "smol"
 
 # Parameters
 [params]
-    subtitle = "freetard, libtard, buddhist"
-    dateFmt = "02.01.2006 15:04"
-  	AuthorName = 'kompowiec2'
-		copyright = "Copyright 2008-{year} kompowiec2 Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved"
+subtitle = "freetard, libtard, zen"
+dateFmt = "02.01.2006 15:04"
+AuthorName = 'kompowiec2'
+copyright = "Copyright 2008-{year} kompowiec2 Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved"
 # Header
 [menu]
-  [[menu.main]]
-        identifier = "posts"
-        name = "Posts"
-        url = "/posts/"
-        weight = 1 
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
+weight = 1 
 
-  [[menu.main]]
-        identifier = "categories"
-        name = "Categories"
-        url = "/categories/"
-        weight = 2 
+[[menu.main]]
+identifier = "categories"
+name = "Categories"
+url = "/categories/"
+weight = 2 
 
-  [[menu.main]]
-        identifier = "tags"
-        name = "Tags"
-        url = "/tags/"
-        weight = 3
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 3
 
 # Footer
-  [[menu.footer]]
-        name = "Github"
-        url = "https://github.com/kompowiec"
-        weight = 1
+[[menu.footer]]
+name = "Github"
+url = "https://github.com/kompowiec"
+weight = 1
 
-  [[menu.footer]]
-        name = "Mastodon"
-        url = "https://social.snopyta.org/@kompowiec2"
-        weight = 1
+[[menu.footer]]
+name = "Mastodon"
+url = "https://social.snopyta.org/@kompowiec2"
+weight = 1
 
-  [[menu.footer]]
-        name = "Matrix"
-        url = "https://matrix.to/#/@kompowiec2:midov.pl"
-        weight = 1
+[[menu.footer]]
+name = "Matrix"
+url = "https://matrix.to/#/@kompowiec2:midov.pl"
+weight = 1
 
-  [[menu.footer]]
-        name = "IRC [PL]"
-        url = "https://rentry.co/polska-knajpa"
-        weight = 1
+[[menu.footer]]
+name = "IRC [PL]"
+url = "https://rentry.co/polska-knajpa"
+weight = 1

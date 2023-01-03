@@ -1,0 +1,80 @@
+---
+title: "StegoIRC"
+date: 2023-01-02T17:01:01+02:00
+draft: true
+---
+Proof-of-concept send hide messages on IRC. I choose IRC colours. Why?
+when we hiding data, there are three basic principles to consider that affect the effectiveness of a given steganography technique:
+
+- Capacity: you can use 100% of the space, the length of the key can also be smaller than the length of the message;
+- detectability: may not work with older IRC clients, or some may have this option turned off, increasing the likelihood of disinterest - even if display the formatting character in an obvious way, so users are aware that it was used.
+- robustness: unless the channel contains +Sc enabled, message delivery is 100% sure
+
+of course, the flaw is that it uses a private key, so anyone who knows the cipher will be able to read it. There will also be the problem of handing over the key in a secure way.
+
+since I'm not a programmer, here's just a rapid prototyping of my idea:
+
+programs used:
+- bash
+- od
+- bc
+- vim
+- python with regex
+
+* Encoding
+   :PROPERTIES:
+   :ID:       53c4f9f6-0927-4871-8bac-913419c0d80f
+   :END:
+Convert string to numbers:
+#+BEGIN_SRC bash
+echo -n "Hello" | od -A n -t x1
+#+END_SRC
+output:
+#+BEGIN_SRC txt
+48 65 6C 6C 6F
+#+END_SRC
+convert hex to mIRC colours using bc:
+#+BEGIN_SRC bash
+#!/bin/bash
+for j in 48 65 6C 6C 6F
+do
+        BIN=$(echo "obase=17; ibase=16; $j" | bc )
+        echo $BIN
+done
+#+END_SRC
+output:
+#+BEGIN_SRC txt
+04 04
+05 16
+06 06
+06 06
+06 09
+#+END_SRC
+delete /n
+#+BEGIN_SRC perl
+:%s/\n/ /g #vim
+#+END_SRC
+output:
+#+BEGIN_SRC txt
+05 16 06 06 06 06 06 09 
+#+END_SRC
+add \u0003
+#+BEGIN_SRC python
+import re
+input = "05 16 06 06 06 06 06 09"
+output = re.sub(r"\b(\d+)\b", r"\u0003\1", input)
+print(output)
+#+END_SRC
+output:
+[[./img/IRColors.png]]
+
+you add some text:
+[[./img/IRColours.png]]
+
+volia.
+
+To decode, the whole process will have to be reversed.
+* references
+- Original Research
+* Further reading
+- [[https://doi.org/10.3390/math9212829][A Review on Text Steganography Techniques]]
