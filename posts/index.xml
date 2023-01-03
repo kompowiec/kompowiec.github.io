@@ -6,7 +6,18 @@
     <description>Recent content in Posts on kompowiec blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Oct 2022 17:00:00 +0200</lastBuildDate><atom:link href="http://kompowiec.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Jan 2023 17:01:01 +0200</lastBuildDate><atom:link href="http://kompowiec.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>StegoIRC</title>
+      <link>http://kompowiec.github.io/posts/stegoirc/</link>
+      <pubDate>Mon, 02 Jan 2023 17:01:01 +0200</pubDate>
+      
+      <guid>http://kompowiec.github.io/posts/stegoirc/</guid>
+      <description>Proof-of-concept send hide messages on IRC. I choose IRC colours. Why? when we hiding data, there are three basic principles to consider that affect the effectiveness of a given steganography technique:
+  Capacity: you can use 100% of the space, the length of the key can also be smaller than the length of the message;
+  detectability: may not work with older IRC clients, or some may have this option turned off, increasing the likelihood of disinterest - even if display the formatting character in an obvious way, so users are aware that it was used.</description>
+    </item>
+    
     <item>
       <title>EmacsOS, on the example of arch</title>
       <link>http://kompowiec.github.io/posts/emacsos/</link>
