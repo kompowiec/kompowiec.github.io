@@ -21,10 +21,6 @@ programs used:
 - vim
 - python with regex
 
-* Encoding
-   :PROPERTIES:
-   :ID:       53c4f9f6-0927-4871-8bac-913419c0d80f
-   :END:
 Convert string to numbers:
 #+BEGIN_SRC bash
 echo -n "Hello" | od -A n -t x1
