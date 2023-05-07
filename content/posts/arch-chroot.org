@@ -1,7 +1,7 @@
 ---
 title: "Install Arch Linux from existing Linux"
 date: 2022-09-20T16:08:00+02:00
-draft: true
+draft: false
 ---
 [[https://gist.githubusercontent.com/kompowiec/93cdd6a9752f7f8a75e65b82507b13e0/raw/bfd0bc9ce0fb2487add2548860be5b2a35667e32/lpm.svg]]
 

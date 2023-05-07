@@ -1,7 +1,7 @@
 ---
 title: "EmacsOS, on the example of arch"
 date: 2022-10-31T17:00:00+02:00
-draft: true
+draft: false
 ---
 tested on VirtualBox:
 

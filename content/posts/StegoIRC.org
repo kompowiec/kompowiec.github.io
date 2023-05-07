@@ -1,7 +1,7 @@
 ---
 title: "StegoIRC"
 date: 2023-01-02T17:01:01+02:00
-draft: true
+draft: false
 ---
 Proof-of-concept send hide messages on IRC. I choose IRC colours. Why?
 when we hiding data, there are three basic principles to consider that affect the effectiveness of a given steganography technique:
