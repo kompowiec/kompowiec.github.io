@@ -70,6 +70,121 @@ you add some text:
 volia.
 
 To decode, the whole process will have to be reversed.
+* Python implementation
+Encode:
+#+BEGIN_SRC python
+# Define the color scheme or key
+COLORS = {
+        "a": "\x03\x0300",
+        "b": "\x03\x0301",
+        "c": "\x03\x0302",
+        "d": "\x03\x0303",
+        "e": "\x03\x0304",
+        "f": "\x03\x0305",
+        "g": "\x03\x0306",
+        "h": "\x03\x0307",
+        "i": "\x03\x0308",
+        "j": "\x03\x0309",
+        "k": "\x03\x0310",
+        "l": "\x03\x0311",
+        "m": "\x03\x0312",
+        "n": "\x03\x0313",
+        "o": "\x03\x0314",
+        "p": "\x03\x0315",
+        "q": "\x03\x0300,01",
+        "r": "\x03\x0300,02",
+        "s": "\x03\x0300,03",
+        "t": "\x03\x0300,04",
+        "u": "\x03\x0300,05",
+        "v": "\x03\x0300,06",
+        "w": "\x03\x0300,07",
+        "x": "\x03\x0300,08",
+        "y": "\x03\x0300,09",
+        "z": "\x03\x0300,10"
+        }
+
+# Define a function to encode a message using the color scheme
+def encode_message(message, cover_message):
+    # Ask the user if they want to continue
+        while True:
+            user_input = input("Warning: Cover message is longer than message. Do you want to continue? (y/n) ")
+            if user_input.lower() == 'y':
+                break
+            elif user_input.lower() == 'n':
+                return ""
+            else:
+                print("Invalid input. Please enter 'y' or 'n'.")
+        encoded = ""
+        is_color = False
+        cover_idx = 0
+        for char in message:
+            if char == "\x03":
+                is_color = True
+        elif is_color:
+            is_color = False
+        elif char in COLORS:
+            if cover_idx < len(cover_message):
+                encoded += COLORS[char] + cover_message[cover_idx]
+                cover_idx += 1
+            else:
+                encoded += COLORS[char] + char
+        else:
+            encoded += char
+    return encoded
+
+# Get user input for the cover message and message to encode
+cover_message = input("Enter a cover message: ")
+message = input("Enter a message to encode: ")
+
+# Encode the message using the color scheme and cover message
+encoded_message = encode_message(message, cover_message)
+
+# Print the cover message and encoded message
+print("Cover message:", cover_message)
+print("Encoded message:", encoded_message)
+
+# Export the output to a text file
+with open("encoded_message.txt", "w") as file:
+    file.write(cover_message + "\n")
+    file.write(encoded_message + "\x03")
+#+END_SRC
+decode:
+#+BEGIN_SRC python
+import re
+
+def decode(encoded_message):
+    # Define the IRC color code pattern
+    color_pattern = re.compile(r"\x03(?:\d{1,2}(?:,\d{1,2})?)?")
+
+    # Remove the color codes from the encoded message
+    message = re.sub(color_pattern, "", encoded_message)
+
+    # Split the message into individual color codes
+    codes = [code for code in re.findall(color_pattern, encoded_message) if code != '']
+
+    # Convert the color codes back to letters
+    decoded_message = ""
+    for code in codes:
+        if code[1:]:
+            decoded_message += chr(int(code[1:]))  # Convert the code to an integer and get the corresponding ASCII character
+
+    return decoded_message
+
+# Read the encoded message from a file
+with open("encoded_message.txt", "r") as f:
+    encoded_message = f.read()
+
+# Decode the message
+decoded_message = decode(encoded_message)
+
+# Print the decoded message
+print(decoded_message)
+
+# Write the decoded message to a file
+with open("decoded_message.txt", "w") as f:
+    f.write(decoded_message)
+#+END_SRC
+
 * references
 - Original Research
 * Further reading
