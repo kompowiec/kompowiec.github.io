@@ -70,10 +70,6 @@ M+X package-install RET exwm
 #+BEGIN_SRC bash
 pacman -S mpd
 #+END_SRC bash
-* Internet
-#+BEGIN_SRC bash
-pacman -S mpd
-#+END_SRC bash
 * References
 - [[https://gist.github.com/MaFeLP/3bd2484299a71ec967630c1155ad8d1f][ArchLinux-Installation-Speedrun.md]]
 - [[https://blog.vivekhaldar.com/post/6290492469/emacs-as-a-login-shell][Emacs as a login shell]]

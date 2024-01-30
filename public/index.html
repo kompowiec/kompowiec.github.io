@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.80.0" />
+	<meta name="generator" content="Hugo 0.111.3">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,15 +40,15 @@
 		
 		
 			<article>
-	<h1><a href="http://kompowiec.github.io/posts/stegoirc/">StegoIRC</a></h1>
-	<b><time>02.01.2023 17:01</time></b>
+	<h1><a href="http://kompowiec.github.io/posts/pubkeystego/">Public Key Steganography</a></h1>
+	<b><time>12.01.2024 11:39</time></b>
 	
 	<div>
-		Proof-of-concept send hide messages on IRC. I choose IRC colours. Why? when we hiding data, there are three basic principles to consider that affect the effectiveness of a given steganography technique:
-  Capacity: you can use 100% of the space, the length of the key can also be smaller than the length of the message;
-  detectability: may not work with older IRC clients, or some may have this option turned off, increasing the likelihood of disinterest - even if display the formatting character in an obvious way, so users are aware that it was used.
+		Stego have issues:
+Although the information will be hidden, it can be read by anyone who knows about it and knows the hiding method.
+This problem usually is partially solved by applying the protection-in-depth principle and encrypting the message before hiding it. Even if someone found the message, they would not be able to read it. Knowning algorithm causes compromised, according to kerckhoffs&#39;s principle - a steganographic method should rely solely on the secrecy of the embedding key or the message itself, rather than the secrecy of the embedding algorithm.
 		
-			<a href="http://kompowiec.github.io/posts/stegoirc/">Read more...</a>
+			<a href="http://kompowiec.github.io/posts/pubkeystego/">Read more...</a>
 		
 	</div>
 </article>
@@ -60,13 +60,13 @@
 	
 	<div>
 		tested on VirtualBox:
-Installation of the base system  format disk
-cfdisk  Make the filesystem
-mkfs.ext4 /dev/sda1  Mount the newly created filesystem
-mount /dev/sda2 /mnt  Install Packages
-pacstrap /mnt base linux linux-firmware grub dhcpcd  Configutaion
-genfstab -U /mnt &gt; /mnt/etc/fstab arch-chroot /mnt grub-install --target=i386-pc /dev/sda --force grub-mkconfig -o /boot/grub/grub.cfg systemctl enable dhcpcd useradd -mG wheel user passwd user passwd exit reboot  run internet
-ip link set enp0s3 up    First run  pacman -S emacs    Use as your shell  add to your .
+Installation of the base system format disk
+cfdisk Make the filesystem
+mkfs.ext4 /dev/sda1 Mount the newly created filesystem
+mount /dev/sda2 /mnt Install Packages
+pacstrap /mnt base linux linux-firmware grub dhcpcd Configutaion
+genfstab -U /mnt &gt; /mnt/etc/fstab arch-chroot /mnt grub-install --target=i386-pc /dev/sda --force grub-mkconfig -o /boot/grub/grub.cfg systemctl enable dhcpcd useradd -mG wheel user passwd user passwd exit reboot run internet
+ip link set enp0s3 up First run pacman -S emacs Use as your shell add to your .
 		
 			<a href="http://kompowiec.github.io/posts/emacsos/">Read more...</a>
 		
@@ -80,12 +80,26 @@ ip link set enp0s3 up    First run  pacman -S emacs    Use as your shell  add to
 	
 	<div>
 		I really hate software management in linux. Is too much and it requires at least a basic knowledge of each of them in the event of a lack of application for your distribution. Also i don&#39;t like arch because of bleeding-edge. My solution?
-  Install any fixed distro (Debian, RHEL, slackware)
-  Chroot arch.
-  Download arch bootstrap:
-cd /tmp wget https://geo.mirror.pkgbuild.com/iso/latest/archlinux-bootstrap-x86_64.tar.gz   unpack:
+Install any fixed distro (Debian, RHEL, slackware) Chroot arch. Download arch bootstrap:
+cd /tmp wget https://geo.mirror.pkgbuild.com/iso/latest/archlinux-bootstrap-x86_64.tar.gz unpack:
+tar xzf archlinux-bootstrap-x86_64.tar.gz --numeric-owner chroot:
+mount --bind /tmp/root.x86_64 /tmp/root.x86_64 cd /tmp/root.
 		
 			<a href="http://kompowiec.github.io/posts/arch-chroot/">Read more...</a>
+		
+	</div>
+</article>
+
+		
+			<article>
+	<h1><a href="http://kompowiec.github.io/posts/summary/">EVERY book from shortform</a></h1>
+	<b><time>31.07.2022 02:26</time></b>
+	
+	<div>
+		In this post, you have summary for every book from shortform plus download magnet link. Trackerlist. Info: so= parameter point out specific filename. If you torrent client doesn&#39;t support filename, you have additional FICTIONAL parameter file= for manual purpouses.
+Career/Success DONE Cal Newport - Deep Work: Rules for Focused Success in a Distracted World MD5: 187ce14e5d0a0a93e276565a28dd34a3 &#34;Deep Work: Rules for Focused Success in a Distracted World&#34; by Cal Newport is a compelling and practical book that explores the importance of deep work in achieving high levels of productivity, creativity, and success in today&#39;s fast-paced and distraction-filled world.
+		
+			<a href="http://kompowiec.github.io/posts/summary/">Read more...</a>
 		
 	</div>
 </article>
@@ -97,8 +111,8 @@ cd /tmp wget https://geo.mirror.pkgbuild.com/iso/latest/archlinux-bootstrap-x86_
 	
 	<div>
 		Hard choices, makes life easier, easy choices makes life harder
- First entry will be special and very personal, because the creation of this blog coincided with drastic changes in my life - the title explains it all - and therefore all other work will be suspended until this problem is resolved.
- I didn&#39;t know it existed until June this year. Theoretically, there were articles on Wikipedia that he came across, but in the 2008 Polish edition, there was no mention of a disorganized style and I didn&#39;t know English at the time, so I lived in ignorance for the rest of my life.
+First entry will be special and very personal, because the creation of this blog coincided with drastic changes in my life - the title explains it all - and therefore all other work will be suspended until this problem is resolved.
+I didn&#39;t know it existed until June this year. Theoretically, there were articles on Wikipedia that he came across, but in the 2008 Polish edition, there was no mention of a disorganized style and I didn&#39;t know English at the time, so I lived in ignorance for the rest of my life.
 		
 			<a href="http://kompowiec.github.io/posts/fa/">Read more...</a>
 		
@@ -115,7 +129,7 @@ cd /tmp wget https://geo.mirror.pkgbuild.com/iso/latest/archlinux-bootstrap-x86_
 	</main>
 
 	<footer>
-	<p>&copy; 2023 <a href="http://kompowiec.github.io/"><b>kompowiec blog</b></a>.
+	<p>&copy; 2024 <a href="http://kompowiec.github.io/"><b>kompowiec blog</b></a>.
 	<a href="https://github.com/kompowiec"><b>Github</b></a>.
 	<a href="https://rentry.co/polska-knajpa"><b>IRC [PL]</b></a>.
 	<a href="https://social.snopyta.org/@kompowiec2"><b>Mastodon</b></a>.

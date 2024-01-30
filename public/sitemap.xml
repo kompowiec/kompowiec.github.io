@@ -1,43 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>http://kompowiec.github.io/</loc>
-    <lastmod>2023-01-02T17:01:01+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2024-01-12T11:39:01+02:00</lastmod>
+  </url><url>
     <loc>http://kompowiec.github.io/posts/</loc>
-    <lastmod>2023-01-02T17:01:01+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://kompowiec.github.io/posts/stegoirc/</loc>
-    <lastmod>2023-01-02T17:01:01+02:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2024-01-12T11:39:01+02:00</lastmod>
+  </url><url>
+    <loc>http://kompowiec.github.io/posts/pubkeystego/</loc>
+    <lastmod>2024-01-12T11:39:01+02:00</lastmod>
+  </url><url>
     <loc>http://kompowiec.github.io/posts/emacsos/</loc>
     <lastmod>2022-10-31T17:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://kompowiec.github.io/posts/arch-chroot/</loc>
     <lastmod>2022-09-20T16:08:00+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>http://kompowiec.github.io/posts/summary/</loc>
+    <lastmod>2022-07-31T02:26:36+02:00</lastmod>
+  </url><url>
     <loc>http://kompowiec.github.io/posts/fa/</loc>
     <lastmod>2022-07-31T02:26:36+02:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://kompowiec.github.io/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://kompowiec.github.io/tags/</loc>
   </url>
-  
 </urlset>

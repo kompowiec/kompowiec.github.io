@@ -6,16 +6,16 @@
     <description>Recent content in Posts on kompowiec blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Jan 2023 17:01:01 +0200</lastBuildDate><atom:link href="http://kompowiec.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Jan 2024 11:39:01 +0200</lastBuildDate><atom:link href="http://kompowiec.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>StegoIRC</title>
-      <link>http://kompowiec.github.io/posts/stegoirc/</link>
-      <pubDate>Mon, 02 Jan 2023 17:01:01 +0200</pubDate>
+      <title>Public Key Steganography</title>
+      <link>http://kompowiec.github.io/posts/pubkeystego/</link>
+      <pubDate>Fri, 12 Jan 2024 11:39:01 +0200</pubDate>
       
-      <guid>http://kompowiec.github.io/posts/stegoirc/</guid>
-      <description>Proof-of-concept send hide messages on IRC. I choose IRC colours. Why? when we hiding data, there are three basic principles to consider that affect the effectiveness of a given steganography technique:
-  Capacity: you can use 100% of the space, the length of the key can also be smaller than the length of the message;
-  detectability: may not work with older IRC clients, or some may have this option turned off, increasing the likelihood of disinterest - even if display the formatting character in an obvious way, so users are aware that it was used.</description>
+      <guid>http://kompowiec.github.io/posts/pubkeystego/</guid>
+      <description>Stego have issues:
+Although the information will be hidden, it can be read by anyone who knows about it and knows the hiding method.
+This problem usually is partially solved by applying the protection-in-depth principle and encrypting the message before hiding it. Even if someone found the message, they would not be able to read it. Knowning algorithm causes compromised, according to kerckhoffs&amp;#39;s principle - a steganographic method should rely solely on the secrecy of the embedding key or the message itself, rather than the secrecy of the embedding algorithm.</description>
     </item>
     
     <item>
@@ -25,13 +25,13 @@
       
       <guid>http://kompowiec.github.io/posts/emacsos/</guid>
       <description>tested on VirtualBox:
-Installation of the base system  format disk
-cfdisk  Make the filesystem
-mkfs.ext4 /dev/sda1  Mount the newly created filesystem
-mount /dev/sda2 /mnt  Install Packages
-pacstrap /mnt base linux linux-firmware grub dhcpcd  Configutaion
-genfstab -U /mnt &amp;gt; /mnt/etc/fstab arch-chroot /mnt grub-install --target=i386-pc /dev/sda --force grub-mkconfig -o /boot/grub/grub.cfg systemctl enable dhcpcd useradd -mG wheel user passwd user passwd exit reboot  run internet
-ip link set enp0s3 up    First run  pacman -S emacs    Use as your shell  add to your .</description>
+Installation of the base system format disk
+cfdisk Make the filesystem
+mkfs.ext4 /dev/sda1 Mount the newly created filesystem
+mount /dev/sda2 /mnt Install Packages
+pacstrap /mnt base linux linux-firmware grub dhcpcd Configutaion
+genfstab -U /mnt &amp;gt; /mnt/etc/fstab arch-chroot /mnt grub-install --target=i386-pc /dev/sda --force grub-mkconfig -o /boot/grub/grub.cfg systemctl enable dhcpcd useradd -mG wheel user passwd user passwd exit reboot run internet
+ip link set enp0s3 up First run pacman -S emacs Use as your shell add to your .</description>
     </item>
     
     <item>
@@ -41,10 +41,20 @@ ip link set enp0s3 up    First run  pacman -S emacs    Use as your shell  add to
       
       <guid>http://kompowiec.github.io/posts/arch-chroot/</guid>
       <description>I really hate software management in linux. Is too much and it requires at least a basic knowledge of each of them in the event of a lack of application for your distribution. Also i don&amp;#39;t like arch because of bleeding-edge. My solution?
-  Install any fixed distro (Debian, RHEL, slackware)
-  Chroot arch.
-  Download arch bootstrap:
-cd /tmp wget https://geo.mirror.pkgbuild.com/iso/latest/archlinux-bootstrap-x86_64.tar.gz   unpack:</description>
+Install any fixed distro (Debian, RHEL, slackware) Chroot arch. Download arch bootstrap:
+cd /tmp wget https://geo.mirror.pkgbuild.com/iso/latest/archlinux-bootstrap-x86_64.tar.gz unpack:
+tar xzf archlinux-bootstrap-x86_64.tar.gz --numeric-owner chroot:
+mount --bind /tmp/root.x86_64 /tmp/root.x86_64 cd /tmp/root.</description>
+    </item>
+    
+    <item>
+      <title>EVERY book from shortform</title>
+      <link>http://kompowiec.github.io/posts/summary/</link>
+      <pubDate>Sun, 31 Jul 2022 02:26:36 +0200</pubDate>
+      
+      <guid>http://kompowiec.github.io/posts/summary/</guid>
+      <description>In this post, you have summary for every book from shortform plus download magnet link. Trackerlist. Info: so= parameter point out specific filename. If you torrent client doesn&amp;#39;t support filename, you have additional FICTIONAL parameter file= for manual purpouses.
+Career/Success DONE Cal Newport - Deep Work: Rules for Focused Success in a Distracted World MD5: 187ce14e5d0a0a93e276565a28dd34a3 &amp;#34;Deep Work: Rules for Focused Success in a Distracted World&amp;#34; by Cal Newport is a compelling and practical book that explores the importance of deep work in achieving high levels of productivity, creativity, and success in today&amp;#39;s fast-paced and distraction-filled world.</description>
     </item>
     
     <item>
@@ -54,8 +64,8 @@ cd /tmp wget https://geo.mirror.pkgbuild.com/iso/latest/archlinux-bootstrap-x86_
       
       <guid>http://kompowiec.github.io/posts/fa/</guid>
       <description>Hard choices, makes life easier, easy choices makes life harder
- First entry will be special and very personal, because the creation of this blog coincided with drastic changes in my life - the title explains it all - and therefore all other work will be suspended until this problem is resolved.
- I didn&amp;#39;t know it existed until June this year. Theoretically, there were articles on Wikipedia that he came across, but in the 2008 Polish edition, there was no mention of a disorganized style and I didn&amp;#39;t know English at the time, so I lived in ignorance for the rest of my life.</description>
+First entry will be special and very personal, because the creation of this blog coincided with drastic changes in my life - the title explains it all - and therefore all other work will be suspended until this problem is resolved.
+I didn&amp;#39;t know it existed until June this year. Theoretically, there were articles on Wikipedia that he came across, but in the 2008 Polish edition, there was no mention of a disorganized style and I didn&amp;#39;t know English at the time, so I lived in ignorance for the rest of my life.</description>
     </item>
     
   </channel>

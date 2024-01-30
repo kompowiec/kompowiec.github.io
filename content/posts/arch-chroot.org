@@ -44,18 +44,16 @@ configuration for paru:
 1) create user
 #+BEGIN_SRC bash
 useradd -m -g users -G wheel,floppy,audio,video,power,lp,scanner -s /bin/bash username
-passwd arch
-pacman -S --needed base base-devel git cargo vi
+passwd username
+pacman -S --needed base base-devel git go vi
+sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL)/' etc/sudoers #uncomment list but doesn't work
 su username
 #+END_SRC bash
-2) add user to sudo:
-#+BEGIN_SRC bash
-sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL)/' etc/sudoers #uncomment list
-#+END_SRC bash
-3) Install paru
+
+2) Install paru
 #+BEGIN_SRC bash
 cd /opt
-git clone https://aur.archlinux.org/paru.git
+git clone https://aur.archlinux.org/yay.git
 chmod 777 -R paru/
 cd paru
 makepkg -si
@@ -65,6 +63,15 @@ run graphics
 #+BEGIN_SRC bash
 xhost +local:
 export DISPLAY=:0
+#+END_SRC bash
+
+or docker
+#+BEGIN_SRC bash
+sudo apt-get update
+sudo apt-get install docker docker.io
+docker pull archlinux
+docker run -it archlinux
+docker rm $(docker ps -a -q)
 #+END_SRC bash
 
 * References

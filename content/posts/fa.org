@@ -72,7 +72,6 @@ The seventh conversation is about keeping love alive. The author explains how to
 
 Overall, "Hold Me Tight" provides a practical and easy-to-follow guide for couples to improve their relationships. The book is based on the EFT approach and provides concrete strategies and exercises that couples can use to strengthen their emotional connection and attachment. The book is written in an accessible language and is suitable for both professionals and laypeople. It is a valuable resource for anyone interested in understanding and improving their romantic relationships.
 ** Harville Hendrix - Getting the Love You Want
-
 "Getting the Love You Want: A Guide for Couples" is a book written by Harville Hendrix, a couples therapist and researcher. The book is based on his Imago Relationship Therapy approach and provides a step-by-step guide for couples to improve their relationships.
 
 The book starts by introducing the concept of the "Imago," which is the unconscious image of the ideal partner that each individual holds in their mind. The author explains how this image can affect our relationships and how understanding it can help us improve them.
@@ -99,7 +98,6 @@ One of the main themes of the book is the importance of addressing the body in t
 
 Overall, "The Body Keeps the Score" is a comprehensive and insightful guide to understanding the impact of trauma on the body, mind, and brain, and how it can be treated. The book is written by a leading expert in the field and is based on the latest research and clinical experience. It is an essential read for anyone interested in understanding and treating trauma, including mental health professionals, researchers, and trauma survivors.
 ** Dr. Eugene Gendlin - Focusing How to Open Up Your Deeper Feelings and Intuition
-
 "Focusing: How to Open Up Your Deeper Feelings and Intuition" is a book written by Dr. Eugene Gendlin, a philosopher and therapist. The book introduces the concept of "Focusing," which is a method for accessing and working with one's inner feelings and intuition in order to improve emotional well-being and personal growth.
 
 The book starts by explaining the Focusing process, which involves paying attention to one's bodily sensations and emotions in order to access deeper feelings and intuition. The author explains how Focusing can be used to understand and work through difficult emotions, such as anxiety and depression.
@@ -150,7 +148,6 @@ The author also delves into the philosophical foundations of NVC and its connect
 
 Overall, "Nonviolent Communication" is a comprehensive and practical guide to understanding and using NVC to improve relationships and resolve conflicts. The book is written by the originator of the method, and is based on his extensive research and clinical experience. It is a valuable resource for anyone interested in understanding and using NVC in their personal and professional lives, including mental health professionals, educators, and anyone who wants to improve their communication skills.
 ** Dr. Robert Bolton - People Skills How to Assert Yourself, Listen to Others, and Resolve Conflicts
-
 "People Skills: How to Assert Yourself, Listen to Others, and Resolve Conflicts" is a book written by Dr. Robert Bolton, a therapist, and researcher. The book provides a comprehensive guide to understanding and developing people skills, which are the abilities that help us to interact effectively with others in personal and professional settings.
 
 The book starts by discussing the importance of people skills in building successful relationships and resolving conflicts. The author explains how people skills can help us to assert ourselves in a respectful and effective manner, to listen actively and empathetically to others, and to resolve conflicts in a way that is beneficial for all parties involved.
@@ -160,8 +157,6 @@ One of the main themes of the book is the importance of effective communication 
 The book also covers the role of self-awareness in people skills. The author explains how self-awareness is essential for understanding our own thoughts, feelings, and behavior, and how it can be used to improve our interactions with others.
 
 The book also delves into the various types of conflicts and how to deal with them effectively. It covers assertiveness, active listening, empathy, problem-solving and negotiation, and how to apply these skills to various types of conflicts
-
-
 ** Pete Walker - Complex PTSD From Surviving to Thriving A Guide and Map for Recovering from Childhood Trauma Createspace
 Pete Walker's "Complex PTSD: From Surviving to Thriving" is a comprehensive guide for those who have experienced childhood trauma and are looking to recover and heal. In the book, Walker provides a map for recovery that includes both theoretical and practical information.
 
@@ -172,8 +167,6 @@ Throughout the book, Walker delves into the various symptoms of C-PTSD, includin
 In addition to exploring the symptoms and effects of C-PTSD, Walker provides practical strategies for recovery, including mindfulness-based practices, cognitive-behavioral therapy, and psychodynamic approaches. He also highlights the importance of self-compassion and self-care in the recovery process, as well as the role that support from others can play.
 
 Ultimately, the author's goal is to help individuals who have experienced childhood trauma to understand their condition and to provide a roadmap for healing and recovery. Through a combination of in-depth information and practical strategies, "Complex PTSD: From Surviving to Thriving" offers hope and guidance to those looking to reclaim their lives after childhood trauma.
-
-
 * Acknowledgements:
 - wariatnakaftan — for forcing changes that I would never have dared otherwise. It just wouldn't be possible.
 - silent_girl — for support and wisdom.
@@ -183,10 +176,18 @@ Ultimately, the author's goal is to help individuals who have experienced childh
 * See also
 - [[https://www.dropbox.com/s/mtr4l19les54g3g/THE%20BEST%20BOOKS%20TO%20HEAL%20ATTACHMENT%20TRAUMA.zip?dl=0][Download dacemars books]]
   - [[https://www.dropbox.com/s/v7q8lu4g3cif2nz/THE%20BEST%20BOOKS%20TO%20HEAL%20ATTACHMENT%20TRAUMA-audiobook.zip?dl=0][Audiobook version (Google TTS)]]
-- [[https://anonfiles.com/6eccK4h0za/Pete_Walker_Complex_PTSD_From_Surviving_to_Thriving_A_Guide_and_Map_for_Recovering_from_Childhood_Trauma_Createspace_2013_epub][Download Pete walker]]
+** Alternative links
+so= parameter indicates filename, not index!
+- [[magnet:?xt=urn:btih:8e95bbd20772765e165ecd63f5bcbb0f7ef9b94f&dn=2678000&so=20f2ff2ab8af7d6f62eab6a4ada85385][Heller, Diane Poole - The power of attachment: how to create deep and lasting intimate relationships]]
+- [[magnet:?xt=urn:btih:69af80918dad4725aa1d624ca9e0d099867e03df&dn=1404000&so=6f8afe297829f3e9eafc204059b71717][Sue Johnson - Love Sense: The Revolutionary New Science of Romantic Relationships]]
+- [[magnet:?xt=urn:btih:6fcf6c27e3bcddbca381973d576919996975b06c&dn=2083000&so=0623581d3a40093f3cd903c46b08149a][Johnson, Susan M - Hold me tight : seven conversations for a lifetime of love]]
+- [[magnet:?xt=urn:btih:82e2ac570dfc2e312b01bbf2b4442dab61a2ca9d&dn=1322000&so=274bfba2acd575d9ee0be1e64d071674][Harville Hendrix - Getting the Love You Want: A Guide for Couples]]
+- [[magnet:?xt=urn:btih:104f2b416c159c4d84dfb34d0ab8e580bed7d6ae&dn=1166000&so=a90180c663a6d2080266043294bb2fbb][Brene Brown - Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead]]
+- [[magnet:?xt=urn:btih:faf44cf19bf5bfe0c3647003c68fd5ae56e89f0d&dn=3760000&so=9993335ae219324daf2d30e7775bc651][Marshall B. Rosenberg - Nonviolent Communication: a Language of Life]]
+- [[magnet:?xt=urn:btih:899c201b10a6efd2e4b98f9ada7ec04f7e56e72c&dn=1483000&so=e50520f2bff959c0d0df37c724548751][Robert Bolton - People Skills: How to Assert Yourself, Listen to Others, and Resolve Conflicts]]
+- [[magnet:?xt=urn:btih:56090cdbd0126fbfb929323955bfc74bfe42b83c&dn=2187000&so=630213bc8c18d3c34b9ebfbe1ce2ff0b][Pete Walker - Complex PTSD: From Surviving to Thriving: A Guide and Map for Recovering from Childhood Trauma]]
 * Further reading
 - [[https://www.tandfonline.com/doi/pdf/10.1080/10508619.2013.795821][Comparing Attachment Theory and Buddhist Psychology]] (Subscription required.)
-  
 * External links
 - [[https://www.youtube.com/channel/UC1HEAeAswWMZUKum2C2YFSA][Paulien Timmer - Healing the fearful avoidant]] — IMO Best resource ever made (I wish it had existed in my youth!)
 - [[https://joyninja.com/fearful-avoidant-attachment-how-to-heal/][Redeeming qualities]]

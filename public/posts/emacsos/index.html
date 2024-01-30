@@ -51,36 +51,36 @@ Installation of the base system
 <div id="outline-text-headline-1" class="outline-text-2">
 <p>format disk</p>
 <div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cfdisk</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cfdisk</span></span></code></pre></div>
 </div>
 <p>Make the filesystem</p>
 <div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkfs.ext4 /dev/sda1</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkfs.ext4 /dev/sda1</span></span></code></pre></div>
 </div>
 <p>Mount the newly created filesystem</p>
 <div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mount /dev/sda2 /mnt</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mount /dev/sda2 /mnt</span></span></code></pre></div>
 </div>
 <p>Install Packages</p>
 <div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacstrap /mnt base linux linux-firmware grub dhcpcd</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacstrap /mnt base linux linux-firmware grub dhcpcd</span></span></code></pre></div>
 </div>
 <p>Configutaion</p>
 <div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">genfstab -U /mnt &gt; /mnt/etc/fstab
-arch-chroot /mnt
-grub-install --target<span style="color:#f92672">=</span>i386-pc /dev/sda --force
-grub-mkconfig -o /boot/grub/grub.cfg
-systemctl enable dhcpcd
-useradd -mG wheel user
-passwd user
-passwd
-exit
-reboot</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>genfstab -U /mnt &gt; /mnt/etc/fstab
+</span></span><span style="display:flex;"><span>arch-chroot /mnt
+</span></span><span style="display:flex;"><span>grub-install --target<span style="color:#f92672">=</span>i386-pc /dev/sda --force
+</span></span><span style="display:flex;"><span>grub-mkconfig -o /boot/grub/grub.cfg
+</span></span><span style="display:flex;"><span>systemctl enable dhcpcd
+</span></span><span style="display:flex;"><span>useradd -mG wheel user
+</span></span><span style="display:flex;"><span>passwd user
+</span></span><span style="display:flex;"><span>passwd
+</span></span><span style="display:flex;"><span>exit
+</span></span><span style="display:flex;"><span>reboot</span></span></code></pre></div>
 </div>
 <p>run internet</p>
 <div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ip link set enp0s3 up</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ip link set enp0s3 up</span></span></code></pre></div>
 </div>
 </div>
 </div>
@@ -90,7 +90,7 @@ First run
 </h2>
 <div id="outline-text-headline-2" class="outline-text-2">
 <div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -S emacs</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -S emacs</span></span></code></pre></div>
 </div>
 </div>
 </div>
@@ -101,7 +101,7 @@ Use as your shell
 <div id="outline-text-headline-3" class="outline-text-2">
 <p>add to your .bashrc</p>
 <div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">emacs -f eshell</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>emacs -f eshell</span></span></code></pre></div>
 </div>
 </div>
 </div>
@@ -111,21 +111,21 @@ Graphics system installation - EXWM
 </h2>
 <div id="outline-text-headline-4" class="outline-text-2">
 <div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -S xorg xorg-xinit</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -S xorg xorg-xinit</span></span></code></pre></div>
 </div>
 <p>In your emacs init file, add:</p>
 <div class="src src-lisp">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp">(<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;exwm</span>)
-(<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;exwm-config</span>)
-(exwm-config-default)</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;exwm</span>)
+</span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">require</span> <span style="color:#e6db74">&#39;exwm-config</span>)
+</span></span><span style="display:flex;"><span>(exwm-config-default)</span></span></code></pre></div>
 </div>
 <p>Run X (or add to your .bashrc)</p>
 <div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">startx /bin/emacs</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>startx /bin/emacs</span></span></code></pre></div>
 </div>
 <p>install exwm:</p>
 <div class="src src-lisp">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp">M+X package-install RET exwm</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>M+X package-install RET exwm</span></span></code></pre></div>
 </div>
 </div>
 </div>
@@ -135,44 +135,28 @@ Sound system installation
 </h2>
 <div id="outline-text-headline-5" class="outline-text-2">
 <div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -S mpd</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pacman -S mpd</span></span></code></pre></div>
 </div>
 </div>
 </div>
 <div id="outline-container-headline-6" class="outline-2">
 <h2 id="headline-6">
-Internet
+References
 </h2>
 <div id="outline-text-headline-6" class="outline-text-2">
-<div class="src src-bash">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pacman -S mpd</code></pre></div>
-</div>
+<ul>
+<li><a href="https://gist.github.com/MaFeLP/3bd2484299a71ec967630c1155ad8d1f">ArchLinux-Installation-Speedrun.md</a></li>
+<li><a href="https://blog.vivekhaldar.com/post/6290492469/emacs-as-a-login-shell">Emacs as a login shell</a></li>
+</ul>
 </div>
 </div>
 <div id="outline-container-headline-7" class="outline-2">
 <h2 id="headline-7">
-References
+Further reading
 </h2>
 <div id="outline-text-headline-7" class="outline-text-2">
 <ul>
-<li>
-<p><a href="https://gist.github.com/MaFeLP/3bd2484299a71ec967630c1155ad8d1f">ArchLinux-Installation-Speedrun.md</a></p>
-</li>
-<li>
-<p><a href="https://blog.vivekhaldar.com/post/6290492469/emacs-as-a-login-shell">Emacs as a login shell</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-headline-8" class="outline-2">
-<h2 id="headline-8">
-Further reading
-</h2>
-<div id="outline-text-headline-8" class="outline-text-2">
-<ul>
-<li>
-<p><a href="https://writequit.org/eos/eos-core.html">The Emacs Operating System (EOS)</a></p>
-</li>
+<li><a href="https://writequit.org/eos/eos-core.html">The Emacs Operating System (EOS)</a></li>
 </ul>
 </div>
 </div>
@@ -188,11 +172,13 @@ Further reading
 		<div>
 			<ul>
 				
-				<li><a href="/posts/stegoirc/">StegoIRC</a></li>
+				<li><a href="/posts/pubkeystego/">Public Key Steganography</a></li>
 				
 				<li><a href="/posts/emacsos/">EmacsOS, on the example of arch</a></li>
 				
 				<li><a href="/posts/arch-chroot/">Install Arch Linux from existing Linux</a></li>
+				
+				<li><a href="/posts/summary/">EVERY book from shortform</a></li>
 				
 				<li><a href="/posts/fa/">How to heal The Fearful-Avoidant/Disorganized attachment style</a></li>
 				
@@ -203,7 +189,7 @@ Further reading
 
 
 	<footer>
-	<p>&copy; 2023 <a href="http://kompowiec.github.io/"><b>kompowiec blog</b></a>.
+	<p>&copy; 2024 <a href="http://kompowiec.github.io/"><b>kompowiec blog</b></a>.
 	<a href="https://github.com/kompowiec"><b>Github</b></a>.
 	<a href="https://rentry.co/polska-knajpa"><b>IRC [PL]</b></a>.
 	<a href="https://social.snopyta.org/@kompowiec2"><b>Mastodon</b></a>.
