@@ -1,0 +1,980 @@
+---
+title: "EVERY book from shortform"
+date: 2023-01-30T23:24:36+02:00
+draft: false
+---
+* Career/Success
+** Cal Newport - Deep Work: Rules for Focused Success in a Distracted World
+** Tiago Fotre - Building a second brain
+** Chris Voss and Tahl Raz - Never Split the Difference
+** Ray Dalio - Principles: Life and Work
+** Carol S. Dweck - Mindset
+** Timothy Ferriss - The 4-Hour Workweek: Escape 9-5, Live Anywhere, and Join the New Rich
+** David Allen - Getting Things Done
+** Jim McCormick - The First-Time Manager
+** Scott Young - Ultralearning
+** Kerry Patterson, Joseph Grenny, et al. - Crucial Conversations
+** Jocko Willink and Leif Babin - Extreme Ownership
+** Gary Keller - The One Thing
+** Mihaly Csikszentmihalyi - Flow
+** Hector Garcia, Francesc Miralles and Contijoch - Ikigai
+** Bill Burnett and Dave Evans - Desinging Your Life
+** Peter F. Drucker - The Effective Executive
+** Tony Robbins - Money: Master the game
+** Robert Greene - Mastery
+** Paul Millerd - The Pathless Path
+** Timothy Feriss - Tools of Titans
+** Brendon Burchard - High Performance Habits
+** Benjamin Hardy - Be Your Future Self Now
+** Nathaniel Branden - The Six Pillars of Self-Esteem
+** Anders Ericsson - Peak
+** Deepak Malhorta and Max Bazerman - Negotiation Genius
+** Darren Hardy - The Compound Effect
+** Joseph Murphy - The Power of Your Subconscious Mind
+** Roger Fisher and William Ury - Getting to Yes
+** Brian Tracy - Eat That Frog!
+** David J. Schwartz - The Magic of Thinking Big
+** Daniel H. Pink - Drive
+** Cal Newport - So Good They Can't Ignore You
+** Damon Zahariades - The Mental Toughness Handbook
+** Steven Pressfield - The War of Art
+** Richard Koch - The 80/20 Principle
+** Grant Car- The 10X Rule: The Only Difference Between Success and Failure
+** David J. Epstein - Range
+** Arthur C. Brooks - From Strength to Strenght
+** Nassim Nicholas Taleb - Fooled By Randomness
+** Simon Sinek, David Mead and Peter Docker - Find Your Why
+** Daniel Walter - The Power of Discipline
+** Carmine Gallo - Talk Like TED
+** Susan Cain - Quiet: The Power of Introverts
+** René Rodriguez - Amplify Your Influence
+** Judih E. Glasser - Conversational Inteligence
+** Jack Canfield - The Success Principles
+** Liz Wiseman - Multipliers
+** MJ DeMarco - UNSCRIPTED: Life, Liberty, and the Pursuit of Entrepreneurship
+** David Rock - You Brain at Work
+** Adam Grant - Give and Take
+** Michael Bungay Stanier - The Coaching Habit
+** Celeste Headlee - Do Nothing
+** Todd Herman - The Alter Ego Effect
+** Keith Ferrazzi - Never Eat Alone
+** John C. Maxwell - The 5 Levels of Leadership
+** John C. Maxwell - The 21 Irrefutable Levels of Leadership
+** Steven Kotler - The Art of Impossible
+** Neil Pasricha - The Happiness Equation
+** Jason Selk, Tom Bartow and Matthew Rudy - Organize Tommorow Today
+** Steven Bartlett - Happy Sexy Milionaire
+** Julie Zhuo - The Making of a Manager
+** Patrick M. Lencioni - The Ideal Team Player
+** Ryan Holiday - Stillness is the Key
+** Napoleon Hill - The Law of Success
+** David Graeber - Bullshit Jobs
+** Jo Boaler - Limitless Mind
+** James M. Kouzes and Barry Z. Posner - The Leadership Challenge
+** Daniel Goleman - Focus
+** Brian Tracy - Goals!
+** Jeff Olson - The Slight Edge
+** Barbara Oakley - Mindshift
+** Katty Kay and Claire Shipman - The Confidence Code
+** Reid Hoffman and Ben Casnocha - The Startup of You
+** Mark Goulston - Just Listen
+** Richard N. Bolles - What Color Is Your Parachute?
+** Joel Schwartzberg - Get to the Point!
+** Stephen M. R. Covey - The Speed of Trust
+** Ken Blanchard and Spencer Johnson - The One-Minute Manager
+** Gay Hendricks - The Genius Zone
+** Sir John Whitmore - Coaching for Performence
+** Grace Lordan - Think Big
+** Marshall Goldsmith - What Got You Here Won't Get You There
+** Peter F. Drucker - Managing Oneself
+** Marcia Reynolds - Coach the Person, Not the Problem
+** Chip and Dan Heath - Decisive
+** Alex Banayan - The Third Door
+** Malcolm Gladwell - David and Goliath
+** Vanessa Van Edwards - Captivate
+** John P. Kotter - Leading Change
+** Daniel Coyle - The Talent Code
+** Napolen Hill - Outwitting the Devil
+** Edward B. Burger and Michael Starbird - The 5 Elements of Effective Thinking
+** Gallup Press - First, Break All the Rules
+** Marcus Buckingham and Ashley Goodall - Nine Lies About Work
+** Bob Burg and John D. Mann - The Go-Giver
+** Spencer Johnson - Who Moved My Cheese?
+** Scott Adams - Win Bigly
+** Paul Marciano - Carrots and Sticks Don't Work
+** Jack Schafer and Marvin Karlins - The Like Switch
+** Ron Friedman - Decoding Greatness
+** Gay Hendricks - The Big Leap
+** Mark Divine - The Way of the SEAL
+** Evy Poumpouras - Becoming Bulletproof
+** Eric Barker - Barking Up the Wrong Tree
+** Sally Helgesen and Marshall Goldsmith - How Women Rise
+** Seth Godin - Linchpin
+** Vishen Lakhiani - The Buddha and the Badass
+** Tom Rath - StrengthsFider 2.0
+** Steven Kotler - The Rise of Superman
+** Steven Kotler and Jamie Wheal - Stealing Fire
+** Seth Godin - The Practice
+** John P. Kotter and Holger Rathgeber - Our Iceberg Is Melting
+** Cal Newport - A World Without Email
+** Joseph Grenny, Kerry Patterson, et al. - Influencer
+*** Joseph Grenny - Influencer: The New Science of Leading Change
+** Daniel Goleman - Primal Leadership
+** Mark Divine - Unbeatable Mind
+** Sheryl Sandberg - Lean In
+** Austin Kleon - Keep Going
+** Jon Gordon - The Energy Bus
+** Rachel Hollis - Girl, stop Apologizing
+** Jon Ronson - So You've Benn Publicly Shamed
+** Francesca Gino - Rebel Talent
+* Communication
+** Dale carnegie - How to win Friends and influence people
+** Robert Greene - The 48 Laws of Power
+** How to Talk to Anyone: 92 Little Tricks for Big Success in Relationships
+** Shelle Rose Charvet - Words That Change minds
+** Tony robbins - Awaken the Giant Within
+** Robert Greene - The Laws of Human nature
+** Robert B. Cialdini - Influence
+** Peter Andrei - How Highly Effective People Speak
+** Daniel Goleman - Emotional Inteligence
+* Motivation
+** James Clear - Atomic habits
+** Mark Manson - The Subtle Art of Not Giving a Fuck
+** Eckhart Tolle - The Power of Now: A Guide to Spiritual Enlightenment
+** Chris Bailey - Hyperfocus
+** Maxwell Maltz - The Psycho-Cybernetics
+** Ryan Holiday - Ego Is the Enemy
+** Viktor E. Frankl - Man's Search for Meaning
+** Angela Duckworth - Grit
+** Brianna Wiest - The Mountain Is You
+** Don Miguel Ruiz - The Four Agreements
+** Ichiro Kishimi and Fumitake Koga - The Courage to Be Disliked
+** Brian P. Moran - The 12 Week Year
+** Ryan Holiday - The Obstacle is the Way: the timeless art of turning trials into triumph
+** Jocko Willink - Discipline Equals Freedom
+** Steve Magness - Do Hard Things
+** Dr. Brené Brown - Daring Greatly How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead
+** Brené Brown - The Gifts of Imperfection
+** Norman Vincent Peale - The Power of Positive Thinking
+** Robert Greene - The Daily Laws
+** Jen Sincero - You Are A Badass
+** Rhonda Byrne - The Secret
+** Ryan Holiday - Courage Is Calling: Fortune Favors the Brave
+** Robin Sharma - The Monk Who Sold His Ferrari
+** Mel Robbins - The 5 Second Rule
+** Robin Sharma - The Everyday Hero Manifesto
+** James Allen - As A Man Thinketh
+** Jeff Haden - The Motivation Myth
+** Chip and Dan Heath - Switch
+** Mark Manson - Everything is Fucked
+** Shirzad Chamine - Positive Inteligence
+** Roger Connors, Tom Smith and Craig Hickman - The Oz Principle
+** William H. McRaven - Make Your Bed
+** Tony Robbins - Unlimited Power
+** Richard Cooper - The Unplugged Alpha: The No Bullshit Guide To Winning With Women & Life
+** Michael A. Singer - The Surrender Experiment
+** Benjamin Hardy and Dan Sullivan - The Gap and The Gain
+** Rachel Hollis - Girl, Wash Your Face
+** Dave Hollis - Bulit Through Courag
+** David Deida - The Way of the Superior Man: A Spiritual Guide to Mastering the Challenges of Women, Work, and Sexual Desire
+** James Williams - Communication Skills Training
+** Debra Fine - The Fine Art of Small Talk
+** Patrick King - Better Small Talk
+** Kim Scott - Radical Candor
+** Douglas Stone, Bruce Patton, Sheila Heen - Difficult Conversations
+** Thomas Erikson - Surrounded by Idiots
+** Rob Biesenbash - Unleash the Power of Storytellng
+** Dr. Marshall B. Rosenberg - Nonviolent Communication (A Language of Life)
+** Travis Breadberry and Jean Greaves - Emotional Intelligence 2.0
+** John C. Maxwell - The 16 Undeniable Laws of Communication
+** Susan Scott - Fierce Conversations
+** Bigrocks Thinking - Critical Thinking, Logic & Problem Solving
+** William Zinsser - On Writing Well
+** Adam Grant - Think Again
+** Adele Faber and Elaine Mazlish - How to Talk So Kids Will Listen & Listen So Kids Will Talk
+** Oliva Fox Cabane - The Charisma Myth
+** Jordan Belfort - Way of the Wolf
+** Malcolm Gladwell - Outiers
+** John Gray - Men Are From Mars, Women Are From Venus
+** Erin Meyer - The Culture Map
+** Douglas Stone and Sheila Heen - Thanks for the Feedback
+** Dale Carnegie - Public Speaking for Success
+** Eric Berne - Games People Play
+** Simon Sinek - Leaders Eat Last
+** Lisa Cron - Wired for Story
+** Brené Brown - Atlas of the Heart
+** Joe Navarro and Marvin Karlins - What Every Body Is Saying
+** Esther Perel - Mating in Captivity
+** Bento C. Leal III - 4 Essential Keys to Effective Communication
+** Joe Navarro - The Dictionary of Body Language
+** Chris Anderson - TED Talks
+** Kindra Hall - Stories That Sick
+** Melody Beattie - Codependent No More
+** Jay Sullivan - Simply Said
+** Phil M. Jones - Exactly What to Say
+** Allan Pease and Barbara Pease - The Definitive Book of Body Language
+** Malcolm Gladwell - Talking of Stranges
+** Kerry Patterson, Joseph Grenny, et al. - Crucial Accountability
+** Ann Handley - Everybody Writes
+** Jay Heinrichs - Thank You for Arguing
+** The Arbinger Institute - Leadership and Self-Deception
+** Priya Parker - The Art of Gathering
+** L. David Marquet - Leadership Is Language
+** Stanley McChrystal - Team of Teams
+** Jeffrey Gitomer - Little Red Book of Selling
+** Chip Heath and Dan Heath - The Power of Moments
+** Gretchen Rubin - The Four Tendencies
+** Kate Murphy - You Not Listening
+** Carmine Gallo - The Bezos Blueprint
+** Steve Harvey - Act Like A Lady Think Like A Man
+** Grant Car- Sell or Be Sold
+** Stephen R. Covey - The 8th Habit
+** The Arbinger Institute - The Anatomy of Peace
+** Dave Logan, John King and Halee Fischer-Wright - Tribal Leadership
+** Benedict Anderson - Imagined Communities
+* Business
+** Gino Wickman - Traction
+** Mike Michalowicz - Fix This Next
+** Daniel Kahneman - Thinking, fast and slow
+** Jordan Peterson - 12 Rules of Life
+** Ryan Daniel Moran - 12 Months to $1 Milion
+** Paul Jarvis - Company of One
+** W. Chan Kim and Renée Mauborgne - Blue Ocean strategy
+** Robert T. Kiyosaki - Rich Dad Poor Dad: What the Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!
+** Warren Berger - A More Beatiful Question
+** MJ DeMarco - The Millionaire Fastlane: Crack the Code to Wealth and Live Rich for a Lifetime!
+** Simon Sinek - Start With Why
+** Eric Ries - The Lean Startup
+** Ash Maurya - Running Lean
+** Patrick M. Lencioni - The Five Dysfunctions of a Team
+** Jim Collins - Good to Great: Why Some Companies Make the Leap... And Others Don't
+** Richard Rumelt - Good Strategy Bad Strategy
+** Peter Thiel - Zero to One
+** Sun Tzu - The Art of War
+** John Doerr - Measure What Matters
+** Michael Watkins - The First 90 Days
+** Donald Miller - Building a storybrand
+** Chris Guillebeau - The $100 Startup
+** Michael E. Gerber - The E-Myth Revisited: Why Most Small Businesses Don't Work and What to Do About It
+** John Mackey and Rajendra Sisodia - Conscious Capitalism
+** Jim Collins - How the Mighty Fall
+** Patrick Bet-David - Your Next Five Moves
+** Josh Kaufman - The Personal MBA
+** Russell Brunson - Dotcom Secrets: The Underground Playbook for Growing Your Company Online with Sales Funnels
+** Nassim Nicholas Taleb - The Black Swam
+** Robert Greene - The 33 Strategies of War
+** Daniel Priestley - Oversubscribed
+** Rusell Brunson - Dotcom Secrets
+** Chris McChesney, Sean Covey and Jim Huling - The 4 Disciplines of Execution
+** Charles T. Munger - Poor Charlie's Almanack
+** Jocko Willink - Leadership Strategy and Tactics
+** Matthew Dixon and Brent Adamson - The Challenger Sale
+** Daniel Coyle - The Culture Code
+** Richard H. Thaler and Cass R. Sunstein - Nudge
+** Alexander Osterwalder and Yves Pigneur - Business Model Generation
+** Ash Ali and Hasan Kubba - The Unfair Advantage
+** Oren Klaff - Pitch Anything
+** Simon Sinek - The Infinite Game
+** Nassim Nicholas Taleb - Skin in the game
+** Neil Rackham - SPIN Selling
+** Allan Dib - The 1-Page Marketing Plan
+** Annie Duke - Thinking in Bets
+** Clayton M. Christensen - The Innovator's Dilemma
+** Ben Horowitz - The Hard Thing About Hard Things
+** Sean Cannell and Benji Travis - YouTube Secrets
+** Dan Sullivan - Who Not How
+** Rob Frizpatrick - The Mom Test
+** Andrew S. Grove - High Output Management
+** Al Ries and Jack Trout - Positioning
+** Seth Godin - Purple Cow
+** Mike Michalowicz - Profit First
+** Warren Buffett and Lawrence A. Cunningham - The Essays of Warren Buffett
+** AG Lafley - Playing to Win
+** Jason Fried and David Heinemeier Hansson - Rework
+** Philip E. Tetlock - Superforecasting
+** Sahil Lavingia - The Minimalist Entrepreneur
+** Marty Cagan - Inspired
+** Jack Welch and Suzy Welch - Winning
+** Yu-Kai Chou - Actionable Gamification
+** Byron Sharp - How Brand Grow
+** Chip Heath and Dan Heath - Made to Stick
+** Jonah Berger - Contagious
+** Larry Keeley, Helen Walters, Ryan Pikkel and Brian Quinn - Ten Types of Innovation
+** Patrick Lencioni - The Advantage
+** L. David Marquet - Turn the Ship Around
+** Geoffrey Moore - Crossing the Chasm
+** Michael Porter - Competetive Strategy
+** Jeff Sutherland - Scrum
+** Eliyahu M. Goldratt - The Goal: A Process of Ongoing Improvement
+** Donald Miller - Business Made Simple
+** Verne Harnish - Scaling Up
+** Pat Flynn - Superfans
+** Reed Hastings - No Rules Rules
+** Ed Catmull - Creativity, Inc.
+** Clayton M. Christensen - How Will You Measure Your Life?
+** Salim Ismail, Michael S. Malone and Yuri van Geest - Exponential Organizations
+** Sean Ellis and Morgan Brown - Hacking Growth
+** Patrick Lencioni - The Four Obessions of an Extraordinary Executive
+** Willam N. Thorndike - The Outsiders: Eight Unconventional CEOs
+** Nir Eyal and Ryan Hoover - Hooked
+** Jim Collins and Jerry Porras - Built to Last
+** David Greene - Buy, Rehab, Rent, Refinance, Repeat
+** Michael Masterson - Ready, Fire, Aim
+** Keith Cunningham - The Road Less Stupid
+** David Ogilvy - Ogilvy On Advertising
+** John Warrillow - Built to Sell
+** Jake Knapp, John Zeratsky and Braden Kowitz - Sprint
+** Chet Holmes - The Ultimate Sales Machine
+** Jeff Walker - Launch
+** Jeff Dyer, Hal Gregersen and Clayton Christensen - The Innovator's DNA
+** Jeffrey K. Liker - The Toyota Way
+** Mark W. Jonhson and Josh Suskewicz - Lead from the Future
+** Malcolm Gladwell - The Tipping Point
+** Vijay Kumar - 101 Deisgn Methods
+** Larry Bossidy and Ram Charan - Execution
+** Peter M. Senge - The  Fifth Discipline
+** Gary Vaynerchuk - Jab, Jab, Jab, Right Hook
+** Mike Michalowicz - Clockwork
+** Adam Grant - Originals
+** Ken Blanchard and Sheldon Bowles - Raving Fans
+** Ryan Holiday - Parennial Seller
+** Frédéric Laloux - Reinventing Organizations
+** Andrew Chen - The Cold Start Problem
+** Jim Collins and Morten T. Hansen - Great by Choice
+** Bill Campbell - Trilion Dollar Coach
+** Tony Fadell - Build
+** John A. List - The Voltage Effect
+** William Bridges and Susan Bridges - Managing Transitions
+** Reid Hoffman and Chris Yeh - Blitzscaling
+** Michael Lewis - The Big Short
+** Derek Sivers - Anything You Want
+** Clayton Christensen - Competing Against Luck
+** Raph Koster - A Theory of Fun for Game Design
+** Gary Vaynerchuk - Crush It!: Why NOW Is the Time to Cash In on Your Passion
+** Safi Bahcall - Loonshots
+** Seth Godin - Tribes
+** Ron Chernow - Alexander Hamilton
+** Andrew S. Grove - Only the Paranoid Survive
+** Ben Horowitz - What You Do Is Who You Are
+** Elisabeth Rosenthal - An American Sickness
+** Matthew Syed - Rebel Ideas
+** Vivek Ramaswamy - Woke, Inc.
+** Michael Lewis - Moneyball
+** Satya Nadella - Hit Refresh
+** Jack Stack and Bo Burlingham - The Great Game of Business
+** Eric Schlosser - Fast Food Nation
+** Jason Schreier - Blood, Sweat and Pixels
+** Carlota Perez - Technological Revolutions and Financial Capital
+** Adam Tranner - Our Bodies, Our Data
+** Jodie Fox - Reboot
+* Health
+** Peter Attia - Outlive
+** John Ratey and Edward Hallowell - ADHD 2.0
+** Dr. Bessel Van Der Kolk - The Body Keeps the Score Brain, Mind, and Body in the Healing of Trauma
+** Anna Lembke - Dopamine Nation
+** Michael Matthews - Bigger Leaner Stronger
+** Garbor Maté - Scattered Minds
+** Joe Dispenza - Becoming Supernatural
+** James Nestor - Breath: The New Science of a Lost Art
+** Garbor Maté - When the Body Says No
+** David Sinclair - Lifespan
+** Nick Trenton - Stop Overthinking
+** Judith S. Beck - Cognitive Behavior Therapy: Basics and Beyond
+** Michael Easter - The Comfort Crisis
+** Patrick McKeown - The Oxygen Advantage: Simple, Scientifically Proven Breathing Techniques to Help You Become Healthier, Slimmer, Faster, and Fitter
+** Lindsay C. Gibson - Adult Children of Emotionally Immature Parents
+** Norman Doidge - The Brain That Changes Itself
+** Judson Brewer - Unwinding Anxiety
+** Lisa Feldman Barrett - How Emotions Are Made
+** Michael Greger - How Not to Die
+** Atul Gawande - The Checklist Manifesto
+** Joyce Meyer - Battlefield of the Mind
+** Edward M. Hallowell and John J. Ratey - Driven to Distraction
+** Michael Pollan - How to Change Your Mind
+** Thibaut Meurisse - Dopamine Detox
+** Annie Grace - This Naked Mind
+** Emily Nagoski - Come As You Are
+** John Ratey - Spark
+** Gin Stephens - Fast. Feast. Repeat.
+** Mark Wolynn - It Didn't Start With You
+** Jason Fung - The Obesity Code
+** Sadhguru - Inner Engineering
+** Holly Whitaker - Quit Like a Woman
+** Dave Asprey - Super Human
+** Michael Pollan - The Ommivore Dilemma
+** John Walker - The Hacker's Diet
+** Johann Hari - Lost Connections
+** Brené Brown - I Thought It Was Just Me (but it isn't)
+** Wim Hof - The Wim Hof Method
+** Atul Gawande - Being Mortal
+** Jill Bolte Taylor - Whole Brain Living
+** Kristin Neff - Self-Compassion
+** Giulia Enders - Gut
+** David Robson - The Expectation Effect
+** Bill Bryson - The Body
+** Steven R. Gundry - The Plant Paradox
+** Sanjay Gupta - Keep Sharp
+** Kelly McGonigal - The Upside of Stess
+** Robert Sapolsky - Why Zebras Don't Get Ulcers
+** T. Colin Campbell and Thomas M. Campbell - The China Study
+** Randolph Nesse and George Williams - Why We Get Sick
+** Glenn Livingston - Never Binge Again
+** Oliver Sacks - The Man Who Mistook His Wife for a Hat
+** Tony Robbins, Peter H. Diamandis and Robert Hariri - Life Force
+** Brian L. Weiss - Many Lives, Many Masters
+** Lissa Rankin - Mind Over Medicine
+** Jason Fung - The Cancer Code
+** Ed Yong - I Contain Multitudes
+** Siddharta Mukherjee - The Emperor of All Maladies
+** Richard Preston - The Hot Zone
+* Biography/Memoir
+** Walter Isaacson - Elon Musk
+** David Goggins - Can't Hurt Me: Master Your Mind and Defy the Odds
+** Will Guidara - Unreasonable Hospitality
+** Neil Strauss - The Game
+** Malcolm X and Alex Haley - The Autobiography of Malcolm X
+** Gregory Zuckerman - The Man Who Solved the Market
+** Joshua Foer - Moonwalking With Einsten
+** Ashlee Vance - Elon Musk
+** Kobe Bryant - The Mamba Mentality
+** Walter Isaacson - Steve Jobs
+** Ron Chernow - Grant
+** The Dalai Lama - The Art of Happiness
+** Tara Westover - Educated
+** Kai Bird and Martin Sherwin - American Prometheus
+** Michael Lewis - Liar's Poker
+** Stepthen King - On Writing
+** 50 Cent and Robert Greene - The 50th Law
+** Paramahansa Yogananda - Autobiography of a Yogi
+** Richard Feynman - Surely You're Joking, Mr. Feynman!
+** Robert Pirsig - Zen and the Art of Motorcycle Maintenance
+** Randy Pausch - The Last Lecture
+** Phil Knight - Shoe Dog
+** Donald J. Trump - The Art of the Deal
+** Meg Jay - The Defining Decade
+** Michelle Obama - Becoming
+** Barack Obama - A Promised Land
+** Donald T. Philips - Lincoln on Leadership
+** Michael Lewis - Going Infinite
+** Jennette McCurdy - I'm Glad My Mom Died
+** Aleksandr Solzhenitsyn - The Gulag Archipelago
+** Lori Gottlieb - Maybe You Should Talk to someone
+** Paul Kalanithi - When Breath Becomes Air
+** Tom Wright and Bradley Hope - Bilion Dolar Whale
+** Michelle Obama - The Light We Carry
+** Alice Schroeder - The Snowball
+** Michael Lewis - The Undoing Project
+** Rebecca Skloot - The Immortal Life of Henrietta Lacks
+** Bob Iger - The Ride of a Lifetime
+** Prince Harry - Spare
+** Jeannette Walls - The Glass Castle
+** Tony Hsieh - Delivering Happiness
+** Nelson Mandela - Long Walk to Freedom
+** John Carreyrou - Bad Blood
+** Anne Frank - The Diary of a Young Girl
+** Piper Kerman - Orange is the New Black
+** Glennon Doyle - Untamed
+** John Brooks - Business Adventures
+** Alfred Lansing - Endurance
+** Stephanie Land - Maid
+** Susannah Cahalan - Brain on Fire
+** Elizabeth Gilbert - Eat Pray Love
+** Matthew McConaughey - Greenlights
+** Bethany McLean and Peter Elkind - The Smartest Guy in the Room
+** Nassir Ghaemi - A First Rate Madness
+** Matthew Perry - Friends, Lovers, and the Big Terrible Thing
+** Sherman Alexie - The Absolutely True Diary of a Part-Time Indian
+** Corrie ten boom - The Hiding place
+** Doris Kearns Goodwin - Leadership: In Turbulent Times
+** Michael Lewis - The Blind Scale
+** Gregg Olsen - If You Tell
+** Shonda Rhimes - Year of Yes
+** Kay Redfield Jamison - An Unquiet Mind
+** Trevor Noah - Born a Crime
+** Brad Stone - The Everything Store
+** J.D. Vance - Hillbilly Elegy
+** Sam Walton - Sam Walton: Made in America
+** TIm O'Brien - The Things They Carried
+** Katherine Boo - Behind The Beautiful Forevers
+** Jonathan Alter - His Very Best
+** Jill Bolte Taylor - My Stroke of Insight
+** Raina Telgemeier - Smile
+** Wes Moore - The Other Wes Moore
+** Margot Lee Shetterly - Hidden Figures
+** Ernest Hemingway - A Moveable Feast
+** Alison Bechdel - Fun Home
+** Todd Burpo - Heaven Is For Real
+** Laura Hillenbrad - Unbroken
+** Ronan Farrow - Catch and Kill
+** John Howard Griffin - Black Like Me
+** Rupi Kaur - Milk and Honey
+** Tracy Kidder - Mountains Beyond Mountains
+** Brad Stone - The Upstarts
+** Dave Peizer - A Child Called "It"
+** Bryan Stevenson - Just Mercy
+* Money/Finance
+** Morgan Housel - The Psychology of Money
+** Jen Sincero - You Are a Badass at Making Money
+** Ramit Sethi - I Will You Teach to Be Rick
+** Eric Jorgenson - The Almanack of Naval Ravikant: A Guide to Wealth and Happiness
+** Benjamin Graham - The Inteligent Investor
+** Thomas Sowell - Basic Economics
+** Thomas J. Stanley and William D. Danko - The Milionaire Next Door
+** Peter Lynch - Beating the Street
+** T. Harv Eker - Secrets of the Millionaire Mind
+** JL Collins - The Simple Path to Wealth
+** George S. Classon - The Richest Man in Babylon
+** Howard Marks - The Most Important Thing
+** Brandon Turner - The Book on Rental Property Investing
+** Jacob Lund Fisker - Early Retirement Extreme 
+** Vicki Robin and Joe Dominguez - Your Money of Your Life
+** Robert T. Kiyosaki - Rich Dad's Cashflow Quadrant
+** Rabbi Daniel Lapin - Thou Shall Prosper
+** Burton G. Malkiel - A Random Walk Down Wall Street
+** Wallance D. Wattles - The Science of Getting Rich
+** Robert G. Hagstrom - The Warren Buffett Way
+** Steven D. Levitt and Stephen J. Dubner - Freakonomics
+** Mark Douglas - Trading in the Zone
+** David Chilton - The Wealthy Barber
+** Peter Lynch - One Up On Wall Street
+** Jane Mayer - Dark Money
+* Managementent/Leadership
+** Stephen R. Covey - The 7 habits of highly effective people
+** Napoleon Hill - Think and Grow Rich
+** Brené Brown - Dare to Lead
+** Stephen R. Covey - First Thing First 
+** Camille Fournier - The Manager's Path
+** Gallup, Tom Rath and Barry Conchie - Strengths Based Leadership 
+** Tim Ferriss - Tribe of Mentors
+** Jim Dethmer, Diana Chapman and Kaley Klemp - The 15 Commitments of Conscious Leadership
+** Jocko Willink and Leif Babin - The Dichotomy of Leadership
+** Patrick Lencioni - The 6 Types of Working Genius
+** Robert Greenleaf - Servant Leadership
+** Matthew Skelton and Manuel Pais - Team Topologies
+** Tim Grover - Relentless
+** Scott Berkun - Making Things Happen
+** Gene Kim - The Unicorn Project
+** Russ Laraway - When They Win, You Win
+** Matthew Syed - Black Box Thinking
+** Gene Kim, Kevin Behr and George Spafford - The Phoenix Project
+** Ronald A. Heifetz - The Practice of Adaptive Leadership
+** Patrick M. Lencioni - Death by Meeting
+** Mike Weinberg - Sales Management, Simplified
+** Dan Heath - Upstream
+** Gary Hamel and Michele Zanini - Humanocracy
+** Amy C. Edmondson - The Fearless Organization
+** Michael Bungay - The Advice Trap
+** Frederick Brooks - The Mythical Man-Month
+** Aaron Dignan - Brave New Work
+** Peter Drucker - The Essential Drucker
+** Anonymous - A Warning
+* Lifestyle
+** Jose Silva - The Silva mind Control method
+** Jocelyn K. Glei - Manage Your Day-to-Day
+** Matthew Walker - Why We Sleep
+** Greg McKeown - Essentialism: The Disciplined Pursuit of Less
+** Oliver Burkeman - Four Thousand Weeks
+** Dale Carnegie - How to Stop Worrying and Start Living
+** Hal Elrod - The Miracle Morning
+** Jay Shetty - Think Like a Monk
+** Brian Christian and Tom Griffiths - Algorithms to Live By
+** Dan Hariss - 10% Happier
+** Ryder Caroll - The Bullet Journal Method
+** Cal Newport - Digital Minimalism
+** Bill Perkins - Die With Zero
+** Myiamoto Musashi - The Book of Five Rings
+** Jon Kabat-Zinn - Whenever You Go, There You Are
+** Dave Ramsey - The Total Money Makeover
+** Russ Harris - The Happiness Trap
+** David Bach - The Automatic Milionaire
+** Jonathan Haidt - The Happiness Hypothesis
+** Gretchen Rubin - The Happiness Project
+** Alan Watts - The Way of Zen
+** John Mark Comer - The Ruthless Elimination of Hurry
+** Barry Schwartz - The Paradox of Choice
+** Dr. Brené Brown - The Power of Vulnerability Teachings of Authenticity, Connection, and Courage
+** Joshua Fields Millburn and Ryan Nicodemus - Minimalism
+** Marie Kondo - The Life-Changing Magic of Tidying Up
+** Robin Sharma - Who Will Cry When You Die?
+** Jaclyn Paul - Order From Chaos
+** Daniel Gilbert - Stumbling on Happiness
+** Shawn Achor - The Happiness Advantages
+** Matthew Dicks - Someday Is Today
+** Robert Waldinger and Marc Schulz - The Good Life
+** Vex King - Good Vibes, Good Life
+** Bill George - Discover Your True North
+** Stefan Aarnio - Hard Times Create Strong Men: Why the World Craves Leadership and How You Can Step Up to Fill the Need
+** Scott Pape - The Barefoot Investor
+** Catherine Price - The Power of Fun
+** Jenny Odell - How to Do Nothing
+** Rick Warren - The Purpose Driven Life
+** David Brooks - The Road to Character
+** Henry Cloud - Neccessary Endings
+** Rachel Rodgers - We Should All Be Millionaires
+** AAWS - Alcoholics Anonymous: The Big Book
+** Erich Fromm - The Art of Loving
+** Robin Wall Kimmerer - Braiding Sweetgrass
+** Wallance J. Nichols - Blue Mind
+** Emily Oster - Expecting Better
+** Benjamin Hoff - The Tao of Poof
+* Education
+** Abby Marks Beale - 10 Days to Faster Reading
+** Sonke Ahrens - How to take smart notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers
+** George Leonard - Mastery
+** Peter C. Brown, Henry L. Roediger III, Mark A. McDaniel - Make It Stick
+** Barbara Oakley - A Mind for Numbers
+** Barbara Oakley and Terrence Sejnowski - Learning How to Learn
+** Jim Kwik - Limitless
+** Barbara Oakley and Olav Schewe - Learn Like a Pro
+** Josh Waitzkin - The Art of Learning
+** Jade Bowler - The Only Study Guide You'll Ever Need
+** Gabriel Weinberg and Lauren McCann - Super Thinking: The Big Book of Mental Models
+** Daron Acemoglu and James A. Robinson - Why Nations Fail
+** Harry Lorayne and Jerry Lucas - The Memory Book
+** John Medina - Briain Rules
+** Cal Newport - How to Become a Straight-A Student
+** Ozan Varol - Think Like a Rocket Scientist
+** Helen Pluckrose and James Lindsay - Cynical Theories
+** William Deresiewicz - Excellent Sleep
+* Philosophy
+** Brianna Wiest - 101 Essays That Will change the way you Think
+** Nassim Nicholas Taleb - antifragile
+** Marcus Aurelius - Medidations
+** Alan Watts - The Wisdom of Insecurity
+** Sam Harris - Free Will
+** Ryan Holiday - Discipline is Destiny
+** Vadim Zeland - Reality Transurfing Steps I-V
+** Albert Camus - The Myth of Sisyphus
+** Ryan Holiday and Stephen Hanselman - The Daily Stoic
+** Roxie Nafousi - Manifest
+** William B. Irvine - A Guide to the Good Life
+** The School of Life - The School of Life
+** Mo Gawdat - Solve for Happy
+** C. S. Lewis - More Christianity
+** Confucius - The Analects
+** Pema Chödrön - When Things Fall Apart
+** Darren Brown - Happy
+** Aristotle - Nicomachean Ethics
+** Alan Watts - The Book
+** Plato - Symposium
+** David Deutsch - The Beginning of Infinity
+** The Dalai Lama, Desmond Tutu and Douglas Abrams - The Book of Joy
+** Peter Bevelin - Seeking Wisdom
+** Susan Cain - Bittersweet
+** Jean-Jacques Rousseau - The Social Contract
+** David Brooks - The Second Mountain
+** Michael Sandel - Justice
+** Roland Barthes - Mythologies
+** Martha Beck - The Way of Integrity
+** C. Wright Millis - The Sociological Imagination
+** Suzanne Simard - Finding the Mother Tree
+* Psychology
+** Susan David - Emotional Agility
+** Tara Swart - The Source
+** Kevin Horsley - Unlimited Memory
+** Bob Rotella - How Champion Think
+** Steven Pinker - Rationality
+** Paul Bloom - Against Empathy
+** Shane Parrish and Rhiannon Beaubien - The Great Mental Models Volume 1
+** Rolf Dobelli - The Art of Thinking Clearly
+** Will Storr - The Status Game
+** BJ Fogg - Tiny Habits
+** Tara Brach - Radical Acceptance
+** David R. Hawkins - Power vs. Force
+** Bhante Gunaratana - Mindfulness in Plain English
+** Kelly McGonigal - The Willpower Instinct
+** Joe Dispenza - Breaking the Habit of Being Yourself
+** Dan Ariely - Predictably Irrational
+** Martin E. P. Seligman - Flourish
+** Eckhart Tolle - A New Earth
+** Robert Sapolsky - Behave
+** Daniel Kahneman, Olivier Sibony and Cass Sunstein - Noise
+** Amy Cuddy - Presence
+** Desinging the Mind and Ryan A Bush - Desinging the Mind
+** Jordan Peterson - Beyond Order
+** Malcolm Gladwell - Blink
+** Shahida Arabi - Power
+** Edward de Bono - Six Thinking Hats
+** Jordan Peterson - Maps of Meaning
+** Carolyn Elliott - Existential Kink
+** Martin E. P. Seligman - Learned Optimism
+** Johann Hari - Stolen Focus
+** Catherine Collin, Nigel Benson, et al. - The Psychology Book
+** Dr. Nicole LePera - How to Do the Work: Recognize Your Patterns, Heal from Your Past, and Create Your Self
+** Maria Konnikova - The Confidence Game
+** Rhiannon Beaubien and Rosie Leizrowice - The Great Mental Models Volume 3
+** Benjamin Hardy - Personality Isn't Permament
+** Jonathan Haidt - The Righteous Mind
+** Katy Milkman - How to Change
+** Richard C. Schwartz - No Bad Parts
+** Elaine Aron - The Highly Sensitive Person
+** Russ Hariss - The Confidence Gap
+** Bob Rotella - Golf Is Not a Game of Perfect
+** Marshall Goldsmith and Mark Reiter - Triggers
+** Robin Hanson and Kevin Simler - The Elephant in the Brain
+** lain MgGilchrist - The Master and His Emissary
+** Lisa Feldman Barrett - Seven and a Half Lessons About the Brain
+** Ethan Kross - Chatter
+** Steve Peters - The Chimp Paradox
+** Scott Barry Kaufman - Transcend
+** Carol Tavris and Eliot Aronson - Mistakes Were Made (But Not by Me)
+** Aziz Gazipura - Not Nice
+** Philip Zimbardo - The Lucifer Effect
+** Emily Nagoski and Amelia Nagoski - Burnout
+** Daniel Pink - The Power of Regret
+** Laura van Dernoot Lipsky - Trauma Stewardship
+** Jennifer L. Eberhardt - Biased
+** Sendhil Mullainathan and Eldar Shafir - Scarcity
+** Luke Burgis - Wanting
+** Lundy Bancroft -  Why Does He Do That?
+* Productivity
+** Mortimer J. Adler and Charles wan Doren - How to read a book
+** Thibaut Meurise - Immediate Action
+** Charles Duhigg - The Power of Habit
+** Robin Sharma - The 5am Club: Own Your Morning. Elevate Your Life
+** Nir Eyal - Indistractable
+** Dandapani - The Power of Unwavering Focus
+** Jake Knapp and John Zeratsky - Make Time
+** Damon Zahariades - The Procrastination Cure
+** Piers Steel - The Procrastination Equation
+** Chris Bailey - The Productivity Project
+** Laura Vanderkam - 168 Hours
+** Charles Duhigg - Smarter Faster Better
+** Daniel J. Levitin - The Organized Mind
+** Greg McKeown - Effortless: Make It Easier to Do What Matters Most
+** Neil A. Fiore - The Now Habit
+** Elizabeth Gilbert - Big Magic
+** Jane B. Burka and Lenora M. Yuen - Procrastination
+** Daniel H. Pink - When
+** Adam Gazzaley and Larry Rosen - The Distracted Mind
+** Annie Murphy Paul - The Extended Mind
+** Thomas C. Foster - How to Read Literature Like a Professor
+* Food
+** Timothy Ferriss - The 4-Hour Body: An Uncommon Guide to Rapid Fat-Loss, Incredible Sex, and Becoming Superhuman
+** Evelyn Tribole and Elyse Resch - Intuitive Eating
+** Jessie Inchauspé - Glucouse Revolution
+** Michael Greger - How Not to Diet
+** Michael Pollan - In Defense of Food
+* Relationships
+** Robert Greene - The Art of Seduction
+** Nancy Kline - Time to Think
+** Amir Levine, Rachel S. F. Heller - Attached: The New Science of Adult Attachment and How It Can Help You Find - and Keep - Love
+** Mark Manson - Models
+** Robert Glover - No More Mr. Nice Guy
+** John Gottman and Nan Silver - The Seven Principles for Making Marriage Work
+** Gary Chapman - The 5 love languages
+** John Gottman, Julie Schwartz Gottman, et al. - Eight Dates
+** Logan Ury - How to Not Die Alone
+** Bell Hooks - All About Love
+** Ian Kerner - She Comes First
+** Rollo Tomassi - The Rational Male 
+** Harville Hendrix and Helen LaKelly Hunt - Getting the Love You Want
+** David Richo - How to Be an Adult in Relationships
+** Nedra Glover Tawwab - Set Boundaries, Find Peace
+* Parenting
+** Philippa Perry - The Book You Wish Your Parents Had Read
+** Becky Kennedy - Good inside
+** Emily Oster - Cribsheet
+** Alison Gopnik - The Gardener and the Carpenter
+* History
+** Yuval Noah Harari - Sapiens
+** Niccolò Machiavelli - The Prince
+** Bill Bryson - A Short History of Nearly Everything
+** Niall Ferguson - The Square and the Tower
+** Epictetus - The Discourses of Epictetus
+** Stephen Hawking - A Brief History of Time
+** Joseph Campbell - The Hero with a Thousand Faces
+** Jared Diamond - Guns, Germs and Steel
+** Will Durant and Ariel Durant - The Lessons of History
+** Christopher Ryan and Cacilda Jethá - Sex at Dawn
+** Karl Marx - The Communist Manifesto
+** Steven Levitsky and Daniel Ziblatt - How Democracies Die
+** Stephen Hawking - Brief Anwsers to the Big Questions
+** Lee Strobel - The Case of Christ
+** Mark Kurlansky - Salt
+** William Strauss and Neil Howe - The Fourth Turning
+** Ibram X. Kendi - How to Be an Antiracist
+** Ijeoma Oluo - So You Want to Talk About Race
+** Elizabeth Kolbert - The Sixth Extinction
+** Amartya Sen - Development as Freedom
+** Richard Rothstein - The Color Of Law
+** David Graeber - The Dawn of Everything
+** Francis Fukuyama - The Origins of Political Order
+** David Grann - Killers of the Flower Moon
+** Carl von Clausewitz - On War
+** C. Wringht Mills - The Power Elite
+** Alexander Hamilton - The Federalist Papers
+** Isabel Wilkerson - Caaste
+** Neil Shubin - Your Inner Fish
+** Steven Pinker - Enlightenment Now
+** Rutger Bregman - Humankind
+** Brian C. Muraresku - The Immortality Key
+** Ibram X. Kendi - Stamped from the Beginning
+** Steven Pinker - The Language Instinct
+** Michael Lewis - Flash Boys
+** Edward Said - Orientalism
+** Michelle Alexander - The New Jim Crow
+** Rachel Maddow - Blowout
+** Bill Bryson - The Mother Tongue
+** Nikole Hannah-Jones - The 1619 Project
+** Thomas Paine - Common Sense
+** H. R. McMaster - Battlegrounds
+** Candace Owens - Blackout
+** James L. Swanson - Chasing Lincoln's Killer
+* Fiction
+** Paulo Coelho - The Alchemist
+** Friendrich Nietzsche - Thus Spoke Zarathustra
+** Mitch Albom - The Five People You Meet in Heaven
+** Heather Moriss - The Tattoist of Auschwitz
+** Delia Owens - Where the Crawdads Sing
+** Rupi Kaur - The Sun and Her Flowers
+** Laurie Halse Anderson - Fever 1793
+* Society/Culture
+** Max Tegmark - Life 3.0
+** Yuval Noah Harari - 21 Lessosns for the 21st Century
+** Yuval Noah Harari - Homo Deus
+** Carl Trueman - The Rise and Triumph of the Modern Self
+** Neil Postman - Amusing Ourselves to Death
+* Economics
+** Joel Greenblatt - You Can Be a Stock Market Genius
+** Tim Marshall - Prisoners of Geography
+** Henry Hazlitt - Economics in One Lesson
+** John C. Bogie - The Little Book of Common Sense Investing
+** Charles Wheelan - Naked Statistics
+** Adam Smith - The Wealth of Nations
+** Kate Raworth - Doughnut Economics
+** Charles J. Wheelan - Naked Economics
+** Tim Harford - The Undercover Economics
+** G. Edward Griffin - The Creature from Jekyll Island
+** Max Weber - The Protestant Ethic and the Spirit of Capitalism
+** John Rawis - A Theory of Justice
+** Milton Friedman - Capitalism and Freedom
+** Saifedean Ammous - The Bitcoin Standard
+** Seth Stephens-Davidowitz - Everybody Lies
+** Stephanie Kelton - The Deficit Myth
+** James Dale Davidson and Lord William Rees-Mogg - The Sovereign Individual
+** Caroline Criado Perez - Invisible Women
+** Michael J. Sandel - What Money Can't Buy
+** Thomas Piketty - Capital in the Twenty-First Century
+** Shoshana Zuboff - The Age of Surveillance Capitalism
+** Paul Collier - The Bottom Bilion
+** Peter Frankopan - The Silk Roads
+** Naomi Klein - The Shock Doctrine
+** Mark R. Levin - American Marxism
+** Vaclav Smil - Numbers Don't Lie
+** Abhijit V. Banerjee and Esther Duflo - Poor Economics
+** Steve Corbett and Brain Fikkert - When Helping Hurts
+** Bryan Burrough and John Helyar - Barbarians at the Gate
+** William Easterly - The White Man's Burden
+** Thomas L. Friedman - The World Is Flat
+* Sales
+** Brian Tracy - The Psychology of Selling: How to Sell More, Easier, and Faster Than You Ever Thought Possible
+** Zig Ziglar -  Secrets of Closing the Sale
+** Mike Weinberg - New Sales Simplified
+** Jeffrey Gitomer - The Sales Bible
+** Og Mandino - The Greatest Salesman In the World
+* Arts/Design
+** Austin Kleon - Steal Like an Artist
+** Don Norman - The Design Of everyday things
+** Walter Isaacson - Leonardo Da Vinci
+** Robert McKee - Story
+** John Berger - Ways of Seeing
+** Austin Kleon - Show Your Work
+** Barbara Minto - The Pyramid Principle
+** Cliff Kuang and Robert Fabricant - User Friendly
+** Julia Cameron - Seeking Wisdom
+* Politics
+** Chris Miller - Chip War
+** Ezra Klein - Why We're Polarized
+** Edward S. Herman and Noam Chomsky - Manufacturing Consent
+** Robin J. DiAngelo - White Fragility
+** Darrell Huff - How to Lie With Statistics
+** Thomas L. Friedman - Thank You for Being Late
+** Douglas Murray - The Madness of Crowds
+** Arlie Russell Hochschild - Strangers In Their Own Land
+** James O'Brien - How Not to Be Wrong: The Art of Changing Your Mind
+** Naomi Oreskes and Erik M. Conway - Merchants of Doubt
+** Kevin Rudd - The Avoidable War
+** Milton William Cooper - Behold a Pale Horse
+** Edward Snowden - Permament Record
+* Marketing
+** AI Ries and Jack Trout - The 22 Immutable Laws of Marketing: Exposed and Explained by the World's Two
+** Seth Godin - This Is Marketing: You Can’t Be Seen Until You Learn to See
+** Daniel H. Pink
+** Eugene M. Schawartz - Breakthrough Advertising: How to Write Ads That Shatter Traditions and Sales Records
+** Drew E. Whitman - Cashvertising: How to Use More Than 100 Secrets of Ad-Agency Psychology to Make Big Money Selling Anything to Anyone
+** Seth Godin - Permssion Marketing
+** Dan S. Kennedy - The Ultimate Sales Letter, 4th Edition: Attract New Customers. Boost your Sales
+** April Dunford - Obviously Awesome: How to Nail Product Positioning so Customers Get It, Buy It, Love It
+** William Luther Jay Conrad Levinson, Michael W. McLaughlin 	Guerrilla Marketing for Consultants: Breakthrough Tactics for Winning Profitable Clients [1 ed.]
+** Rusell Brunson - Expert Secrets
+** Jay Conrad Levinson - Guerrilla Marketing
+* Parenting
+** Harvey karp - The Happiest Baby on the Block
+** Daniel J. Siegel and Tina Payne Bryson - The Whole-Brain Child
+** Greg Lukianoff and Jonathan Haidt - The Coddling of the American Mind
+** Bruce Perry and Oprah Winfrey - What Happened to You?
+** Ross Greene - The Explosive Child
+** Daniel J. Siegel and Tina Payne Bryson - No-Drama Discipline
+** Alfie Kohn - Unconditional Parenting
+** Jamie Glowacki - Oh Crap! Potty Training
+** Thomas W. Phelan - 1-2-3 Magic
+** Bruce D. Perry and Maia Szalavitz - The Boy Who Was Raised as a Dog
+* Science
+** Ray Kurzweil - The Singularity Is Near
+** Vaclav Smil - How the World Really Works
+** Bruce Lipton - The Biology of Belief
+** Michio Kaku - The God Equation
+** Shane Parrish and Rhiannon - The Great Mental Models Volume 2
+** Richard Dawkins - The Selfish Gene
+** David Epstein - The Sports Gene
+** Richard Dawkins - The God Delusion
+** Bill Gates - How to Avoid a Climate Disaster
+** Hans Rosling - Factfulness
+** Nate Silver - The Signal and the Noise
+** Neil de Grasse Tyson - Astrophysics for People in a Hurry
+** Michael Shellenberger - Apocalypse Never
+** Carl Sagan - The Demon-Haunted World
+** Carl Sagan - Cosmos
+** Nick Lane - The Vital Question
+** Thomas Kuhn - The Structure Of Scientific Revolutions
+** Charles Darwin - On the Origin of Spieces
+** Siddahartha Mukherjee - The Gene
+** Crhis Hadfield - An Astronaut's Guide to Life on Earth
+** Ben Goldacre - Bad Science
+** Merlin Sheldrake - Entangled Life
+** Bjorn Lomborg - False Alarm
+** Alan Weisman - The World Without Us
+** Steven E. Koonin - Unsettled
+* Self-improvement
+** Michael A. Singer - The Untethered Soul
+** W. Timothy Gallwey - The Inner Game of Tennis
+** John C. Maxwell - The 15 Invaluable Laws of Growth
+** M. Scott Peck - The Road Less Traveled
+** Mel Robbins - The High 5 Habit
+** Deepak Chopra - The Seven Spiritual Laws of Success
+** Lao Tzu - Tao Te Ching
+** Gary John Bishop - Unfuck Yourself
+** Don Miguel Ruiz and Don Jose Ruiz - The Fifth Agreement
+** Marie Forleo - Everything Is Figureoutable
+** Jennie Allen - Get Out of Your Head
+** Byron Katie - Loving What Is
+** Gary Zukav - The Seat of the Soul
+** Jon Acuff - Soundtracks
+** Bob Goff - Everybody Always
+** Rhonda Byrne - The Power
+** Louise Hay - You Can Heal Your Life
+* Spirituality
+** Sam Harris - Waking Up: A Guide to Spirituality Without Religion
+** Graves, Jeremy;Immergut, Matthew;Yates, Culadasa John - The mind illuminated: a complete meditation guide integrating buddhist wisdom and brain science
+** Eknath Easwaran - Essence of the Bhagavad Gita: A Contemporary Guide to Yoga, Meditation, and Indian Philosophy
+** Dietrich Bonhoeffer - The Cost of Discipleship
+* Entrepreneurship
+** Seth Godin - All Marketers Are Liars: The Power of Telling Authentic Stories in a Low-Trust World
+** Steven Johnson - Where Good Ideas Come From: The Natural History of Innovation
+** Al Ramadan, Dave Peterson, Christopher Lochhead, Kevin Maney - Play Bigger: How Pirates, Dreamers, and Innovators Create and Dominate Markets
+** Peter H. Diamandis, Steven Kotler - Bold: How to Go Big, Create Wealth, and Impact the World
+* Technology
+** Robert C. Martin - The Clean Coder: A Code of Conduct for Professional Programmers
+* Media
+** Scott Galloway - The Four: The Hidden DNA of Amazon, Apple, Facebook, and Google
