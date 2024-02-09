@@ -82,3 +82,8 @@ docker rm $(docker ps -a -q)
 * Further reading
 - [[http://www.packagekit.org/][PackageKit]]
 - [[https://bedrocklinux.org/][Bedrock linux]]
+* External links
+- https://www.youtube.com/shorts/uwjDgfMhHQU - Vide version - YouTube
+- https://odysee.com/@rossmanngroup:a/the-best-way-to-watch-online-video-my:c Video version - Odysee
+- https://video-cave-v2.de/w/uGN9vaXUKtuuFSVrBUfuaz Video version - PeerTube
+- Video version - Torrent

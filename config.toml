@@ -1,14 +1,24 @@
 baseURL = "http://kompowiec.github.io/"
 languageCode = "en-us"
 title = "kompowiec blog"
-theme = "smol"
+theme = "smigle-hugo-theme"
+[params.contact]
+email = 'diasp@o2.pl'
 
 # Parameters
 [params]
 subtitle = "freetard, libtard, zen"
 dateFmt = "02.01.2006 15:04"
 AuthorName = 'kompowiec2'
-copyright = "Copyright 2008-{year} kompowiec2 Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved"
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+# avatarurl = "https://static.fsf.org/nosvn/associate/crm/5635413.png" # Contain the path of the optional avatar in the static folder.
+avatar = "5635413.png"
+mainSections = ["posts"]
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+disableKinds = ['taxonomy', 'term']
 # Header
 [menu]
 [[menu.main]]
@@ -36,16 +46,21 @@ url = "https://github.com/kompowiec"
 weight = 1
 
 [[menu.footer]]
-name = "Mastodon"
-url = "https://social.snopyta.org/@kompowiec2"
-weight = 1
-
-[[menu.footer]]
 name = "Matrix"
 url = "https://matrix.to/#/@kompowiec2:midov.pl"
 weight = 1
 
 [[menu.footer]]
-name = "IRC [PL]"
+name = "IRC"
+url = "https://www.irccloud.com/invite?channel=%23fsf&hostname=irc.libera.chat&port=6667"
+weight = 1
+
+[[menu.footer]]
+name = "IRC (polish)"
 url = "https://rentry.co/polska-knajpa"
+weight = 1
+
+[[menu.footer]]
+name = "XMPP"
+url = "https://yax.im/i/#kompowiec2@member.fsf.org"
 weight = 1

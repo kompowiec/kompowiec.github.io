@@ -1,5 +1,4 @@
 # smol
-
 A minimal, monospaced blogging theme for Hugo that respects your privacy and is easy on your bandwidth. A demo can be found at https://smol-demo.morph.sh.
 
 smol is based on [Blank](https://github.com/Vimux/Blank) created by [Vimux](https://github.com/Vimux).
