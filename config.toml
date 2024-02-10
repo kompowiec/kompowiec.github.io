@@ -1,7 +1,7 @@
 baseURL = "http://kompowiec.github.io/"
 languageCode = "en-us"
 title = "kompowiec blog"
-theme = "smigle"
+theme = "smigle-hugo-theme"
 [params.contact]
 email = 'diasp@o2.pl'
 
