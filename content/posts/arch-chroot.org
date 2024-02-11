@@ -9,54 +9,47 @@ I really hate software management in linux. Is too much and it requires at least
 1. Install any fixed distro (Debian, RHEL, slackware)
 2. Chroot arch.
 
-Download arch bootstrap:
 #+BEGIN_SRC bash
 cd /tmp
-wget https://geo.mirror.pkgbuild.com/iso/latest/archlinux-bootstrap-x86_64.tar.gz
-#+END_SRC bash
-
-unpack:
-#+BEGIN_SRC bash
-tar xzf archlinux-bootstrap-x86_64.tar.gz --numeric-owner
-#+END_SRC bash
-
-chroot:
-#+BEGIN_SRC bash
-mount --bind /tmp/root.x86_64 /tmp/root.x86_64
-cd /tmp/root.x86_64
-cp /etc/resolv.conf etc
-mount -t proc /proc proc
-mount --rbind /sys sys
-mount --rbind /dev dev
-mount --rbind /run run    # (assuming /run exists on the system)
-chroot /tmp/root.x86_64 /bin/bash #run
+wget https://geo.mirror.pkgbuild.com/iso/latest/archlinux-bootstrap-x86_64.tar.gz # Download Arch Linux bootstrap tarball
+tar xzf archlinux-bootstrap-x86_64.tar.gz --numeric-owner # Extract the downloaded tarball with numeric owner information
+mount --bind root.x86_64/ /tmp/root.x86_64 # Bind mount the extracted root directory to /tmp/root.x86_64
+cd root.x86_64 # Change to the extracted root directory
+cp /etc/resolv.conf /etc/ # Copy the host's DNS resolution configuration to the chroot environment
+mount -t proc /proc proc # Mount proc, sys, dev, and run filesystems
+mount --make-rslave --rbind /sys sys
+mount --make-rslave --rbind /dev dev
+mount --make-rslave --rbind /run run
+chroot /tmp/root.x86_64 /bin/bash # Enter the chroot environment
 #+END_SRC bash
 
 start!
 #+BEGIN_SRC bash
-sed -i 's/^#Server/Server/' etc/pacman.d/mirrorlist #uncomment list
+sed -i 's/^#Server/Server/' etc/pacman.d/mirrorlist # Uncomment the first uncommented line starting with "Server" in mirrorlist
 pacman-key --init #initalizing pacman keyring
-pacman -Syu #update
-pacman-key --populate #veryfing the master keys
+pacman-key --populate archlinux #veryfing the master keys
+pacman -Sy arch-keyring
+pacman -Syu # Update the system
 #+END_SRC bash
 
 configuration for paru:
 1) create user
 #+BEGIN_SRC bash
-useradd -m -g users -G wheel,floppy,audio,video,power,lp,scanner -s /bin/bash username
+useradd -m -g users -G wheel,floppy,audio,video,power,lp,scanner -s /bin/bash username # Create a new user with necessary groups and set a password
 passwd username
-pacman -S --needed base base-devel git go vi
-sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL)/' etc/sudoers #uncomment list but doesn't work
-su username
+pacman -S --needed base base-devel git go vi # Install essential packages and tools
+sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL)/' /etc/sudoers # Uncomment the wheel group sudo permissions in sudoers file
+su username # Switch to the newly created user
 #+END_SRC bash
 
-2) Install paru
+2) Install yay
 #+BEGIN_SRC bash
-cd /opt
-git clone https://aur.archlinux.org/yay.git
-chmod 777 -R paru/
-cd paru
-makepkg -si
+cd /opt # Change to the /opt directory
+git clone https://aur.archlinux.org/yay-bin.git # Clone the Yay AUR helper repository
+chmod 777 -R yay-bin/ # Give necessary permissions to the yay-bin directory
+su username 
+cd yay-bin # Change to the yay-bin directory
+makepkg -si # Build and install the Yay AUR helper
 #+END_SRC bash
 
 run graphics
@@ -83,7 +76,4 @@ docker rm $(docker ps -a -q)
 - [[http://www.packagekit.org/][PackageKit]]
 - [[https://bedrocklinux.org/][Bedrock linux]]
 * External links
-- https://www.youtube.com/shorts/uwjDgfMhHQU - Vide version - YouTube
-- https://odysee.com/@rossmanngroup:a/the-best-way-to-watch-online-video-my:c Video version - Odysee
-- https://video-cave-v2.de/w/uGN9vaXUKtuuFSVrBUfuaz Video version - PeerTube
-- Video version - Torrent
+- https://www.youtube.com/watch?v=Xq5uHngjqYU - Video version - YouTube
