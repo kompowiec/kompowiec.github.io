@@ -23,12 +23,9 @@ pacstrap /mnt base linux linux-firmware grub dhcpcd Configutaion
 genfstab -U /mnt > /mnt/etc/fstab arch-chroot /mnt grub-install --target=i386-pc /dev/sda --force grub-mkconfig -o /boot/grub/grub.cfg systemctl enable dhcpcd useradd -mG wheel user passwd user passwd exit reboot run internet
 ip link set enp0s3 up First run pacman -S emacs Use as your shell add to your .</p><a href=http://kompowiec.github.io/posts/emacsos/>Read more...</a></div></article><article class=summary><a href=http://kompowiec.github.io/posts/arch-chroot/><h1 class=title>Install Arch Linux from existing Linux</h1></a><div class=post-meta><strong><span>Posted on</span>
 <time>20.09.2022 16:08</time>
-</strong><span>• 238 words</span>
+</strong><span>• 352 words</span>
 <span>• 2 minute read</span></div><div class=content><p>I really hate software management in linux. Is too much and it requires at least a basic knowledge of each of them in the event of a lack of application for your distribution. Also i don't like arch because of bleeding-edge. My solution?
-Install any fixed distro (Debian, RHEL, slackware) Chroot arch. Download arch bootstrap:
-cd /tmp wget https://geo.mirror.pkgbuild.com/iso/latest/archlinux-bootstrap-x86_64.tar.gz unpack:
-tar xzf archlinux-bootstrap-x86_64.tar.gz --numeric-owner chroot:
-mount --bind /tmp/root.x86_64 /tmp/root.x86_64 cd /tmp/root.</p><a href=http://kompowiec.github.io/posts/arch-chroot/>Read more...</a></div></article><article class=summary><a href=http://kompowiec.github.io/posts/fa/><h1 class=title>How to heal The Fearful-Avoidant/Disorganized attachment style</h1></a><div class=post-meta><strong><span>Posted on</span>
+Install any fixed distro (Debian, RHEL, slackware) Chroot arch. cd /tmp wget https://geo.mirror.pkgbuild.com/iso/latest/archlinux-bootstrap-x86_64.tar.gz # Download Arch Linux bootstrap tarball tar xzf archlinux-bootstrap-x86_64.tar.gz --numeric-owner # Extract the downloaded tarball with numeric owner information mount --bind root.</p><a href=http://kompowiec.github.io/posts/arch-chroot/>Read more...</a></div></article><article class=summary><a href=http://kompowiec.github.io/posts/fa/><h1 class=title>How to heal The Fearful-Avoidant/Disorganized attachment style</h1></a><div class=post-meta><strong><span>Posted on</span>
 <time>31.07.2022 02:26</time>
 </strong><span>• 4188 words</span>
 <span>• 20 minute read</span></div><div class=content><p>Hard choices, makes life easier, easy choices makes life harder
