@@ -1,0 +1,2 @@
+Copyright © 2025 kompowiec2. Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved. Verbatim copying and redistribution of any of the content is permitted under the Creative Commons Noderivs license version 3.0 or later.
+

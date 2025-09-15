@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on kompowiec2</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on kompowiec2</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2025 kompowiec2. Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved. Verbatim copying and redistribution of any of the content is permitted under the Creative Commons Noderivs license version 3.0 or later.</copyright>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

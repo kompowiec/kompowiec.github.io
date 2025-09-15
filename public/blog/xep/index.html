@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-US"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="description" content="XEP-XXXX: Message Scheduling Abstract: This document defines an XMPP protocol extension for schedule future sends. Authors: Kompowiec2 Copyright: © 1999 – 2025 XMPP Standards Foundation. SEE LEGAL NOTICES. Status Active Type: Standards Track Version 1.0.0 (2025-09-14) 1. Summary This XEP defines a standard mechanism for scheduling the delivery of XMPP messages at a specific future time or after a specified delay. It provides a client- and server-compatible protocol for scheduling one-off and recurring messages, support for time zones and absolute timestamps, status queries, cancellation, and policy controls for servers and components that choose to implement scheduling.">  
+
+  <title>
+    
+      
+    
+  </title>
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/" />
+  
+  
+  
+  <link rel="stylesheet" href="/css/main.900100e9dbee2d56c58fac8bb717037cae7e26a9c36c29d2ff587bdd65f0cbbe510b41d81a3bb234919cdfdc7550d786b2fab70c8fc507772d732fe097106d12.css" integrity="sha512-kAEA6dvuLVbFj6yLtxcDfK5&#43;JqnDbCnS/1h73WXwy75RC0HYGjuyNJGc39x1UNeGsvq3DI/FB3ctcy/glxBtEg==" />
+  
+</head>
+<body a="auto">
+        <main class="page-content" aria-label="Content">
+            <div class="w">
+<a href="/">..</a>
+
+
+<article>
+    <p class="post-meta">
+        <time datetime="0001-01-01 00:00:00 &#43;0000 UTC">
+            0001-01-01
+        </time>
+    </p>
+
+    <h1></h1>
+
+    
+
+    <h1 id="xep-xxxx-message-scheduling">XEP-XXXX: Message Scheduling</h1>
+<ul>
+<li><strong>Abstract</strong>: This document defines an XMPP protocol extension for schedule future sends.</li>
+<li><strong>Authors</strong>: Kompowiec2</li>
+<li><strong>Copyright</strong>: © 1999 – 2025 XMPP Standards Foundation. SEE LEGAL NOTICES.</li>
+<li><strong>Status</strong> Active</li>
+<li><strong>Type</strong>: Standards Track</li>
+<li><strong>Version</strong> 1.0.0 (2025-09-14)</li>
+</ul>
+<h2 id="1-summary">1. Summary</h2>
+<p>This XEP defines a standard mechanism for scheduling the delivery of XMPP messages at a specific future time or after a specified delay. It provides a client- and server-compatible protocol for scheduling one-off and recurring messages, support for time zones and absolute timestamps, status queries, cancellation, and policy controls for servers and components that choose to implement scheduling. The goal is to enable interoperable &ldquo;send later&rdquo; features across XMPP clients and services.</p>
+<h2 id="2-scope">2. Scope</h2>
+<p>This XEP covers:</p>
+<ul>
+<li>An XML namespace and stanzas for scheduling instructions attached to a message or sent as a separate scheduling request to a server/component.</li>
+<li>Timestamp formats and time zone handling (based on XEP-0082 profiles).</li>
+<li>Message lifecycle states (scheduled, queued, sent, failed, cancelled).</li>
+<li>Optional support for recurring scheduled messages.</li>
+<li>Access control and privacy considerations.</li>
+</ul>
+<p>This XEP intentionally <strong>does not</strong> mandate server-side persistence policies or retention durations; it provides a framework that server operators may implement according to local policy.</p>
+<h2 id="3-conventions-and-terminology">3. Conventions and Terminology</h2>
+<p>The key words MUST, SHOULD, MAY are to be interpreted as described in RFC 2119/8174.</p>
+<ul>
+<li><strong>Scheduler</strong> — an entity (server, component, or bot) that accepts scheduling requests and performs future delivery.</li>
+<li><strong>Scheduler-enabled server</strong> — an XMPP server that advertises support for this XEP.</li>
+<li><strong>Client-side scheduling</strong> — when the client itself holds and sends messages at scheduled times without server help.</li>
+<li><strong>Scheduled message</strong> — a message with metadata instructing delivery at a specific future time.</li>
+</ul>
+<h2 id="4-namespace-and-discovery">4. Namespace and Discovery</h2>
+<p>This XEP uses the namespace <code>urn:xmpp:scheduling:0</code>.
+A server or component that accepts scheduling requests MUST advertise the feature in service discovery: <code>urn:xmpp:scheduling:0</code>.
+Clients SHOULD query their server or the dedicated scheduling component for capabilities, including maximum scheduling time window, allowed recurrence types, and quota limits.</p>
+<h2 id="5-scheduling-models">5. Scheduling Models</h2>
+<p>Two interoperable models are defined:</p>
+<h3 id="51-inline-scheduling-client-originated">5.1 Inline Scheduling (Client-originated)</h3>
+<p>Clients may attach a <code>&lt;schedule/&gt;</code> child to the message stanza to indicate that the message SHOULD be delivered at a specified future instant. Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;message</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#39;alice@example.org&#39;</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#39;chat&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;body&gt;</span>Happy birthday!<span style="color:#f92672">&lt;/body&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;schedule</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:scheduling:0&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;deliver-at&gt;</span>2025-12-01T09:00:00Z<span style="color:#f92672">&lt;/deliver-at&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;timezone&gt;</span>Europe/Warsaw<span style="color:#f92672">&lt;/timezone&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;id&gt;</span>msg-1234<span style="color:#f92672">&lt;/id&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/schedule&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/message&gt;</span>
+</span></span></code></pre></div><p>If the server supports inline scheduling, it MUST accept the message and take responsibility for delivering it at the requested time. If it does not support scheduling, it SHOULD return a stanza error of type <code>feature-not-implemented</code> (see §8: Errors) and the client SHOULD fall back to client-side scheduling.</p>
+<h3 id="52-scheduling-via-scheduler-component-out-of-band">5.2 Scheduling via Scheduler Component (Out-of-band)</h3>
+<p>A client MAY send a scheduling request to a scheduler service (server or component) using a <code>set</code> IQ to the scheduler JID. This model separates scheduling instructions from the message content and is useful when the client wants centralised scheduling (e.g., for multi-device synchronization).</p>
+<p>Example request:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;iq</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#39;scheduler.example.org&#39;</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#39;set&#39;</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#39;s1&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;schedule</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:scheduling:0&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;to&gt;</span>alice@example.org<span style="color:#f92672">&lt;/to&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;body&gt;</span>Happy birthday!<span style="color:#f92672">&lt;/body&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;deliver-at&gt;</span>2025-12-01T09:00:00Z<span style="color:#f92672">&lt;/deliver-at&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;timezone&gt;</span>Europe/Warsaw<span style="color:#f92672">&lt;/timezone&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;id&gt;</span>job-5678<span style="color:#f92672">&lt;/id&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/schedule&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/iq&gt;</span>
+</span></span></code></pre></div><p>The scheduler responds with a <code>result</code> IQ containing the assigned job id and optionally metadata (quota, expiry):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;iq</span> <span style="color:#a6e22e">from=</span><span style="color:#e6db74">&#39;scheduler.example.org&#39;</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#39;result&#39;</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#39;s1&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;schedule</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:scheduling:0&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;id&gt;</span>job-5678<span style="color:#f92672">&lt;/id&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;status&gt;</span>scheduled<span style="color:#f92672">&lt;/status&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;expires&gt;</span>2026-12-01T09:00:00Z<span style="color:#f92672">&lt;/expires&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/schedule&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/iq&gt;</span>
+</span></span></code></pre></div><h2 id="6-time-formats-and-time-zones">6. Time Formats and Time Zones</h2>
+<p>Timestamps MUST conform to the profile of XEP-0082 (dateTime) with UTC offsets. Servers and clients MUST be prepared to accept and interpret timestamps provided with an explicit timezone or as UTC (<code>Z</code>).</p>
+<p>For user-friendly display and scheduling, the <code>&lt;timezone&gt;</code> element can be included to indicate the originator&rsquo;s timezone (e.g. <code>Europe/Warsaw</code>). The scheduler MUST store timestamps in UTC and use the provided timezone only for user display or recurring rule interpretation.</p>
+<h2 id="7-elements-and-attributes">7. Elements and Attributes</h2>
+<h3 id="71-schedule-common-child-elements">7.1 <code>&lt;schedule/&gt;</code> common child elements</h3>
+<ul>
+<li><code>&lt;id&gt;</code> — client or server-assigned opaque identifier.</li>
+<li><code>&lt;deliver-at&gt;</code> — an XEP-0082 formatted absolute timestamp in UTC or with offset.</li>
+<li><code>&lt;delay-seconds&gt;</code> — alternative relative delay in seconds (mutually exclusive with <code>&lt;deliver-at&gt;</code>).</li>
+<li><code>&lt;timezone&gt;</code> — IANA timezone name (optional).</li>
+<li><code>&lt;recurrence&gt;</code> — optional recurrence rule (see §7.3).</li>
+<li><code>&lt;expires&gt;</code> — optional timestamp after which the scheduler MUST discard the scheduled job if not executed.</li>
+<li><code>&lt;status&gt;</code> — for responses: <code>scheduled</code>, <code>queued</code>, <code>sent</code>, <code>failed</code>, <code>cancelled</code>.</li>
+<li><code>&lt;metadata&gt;</code> — arbitrary metadata such as tags or delivery hints (server MAY ignore unknown metadata).</li>
+</ul>
+<p>Fields not recognized SHOULD be ignored by the receiver.</p>
+<h3 id="72-security-attributes">7.2 Security attributes</h3>
+<p>A <code>&lt;schedule/&gt;</code> may include a <code>signed='true'</code> attribute to indicate that the scheduling request is cryptographically signed (e.g., using XEP-0374/OpenPGP or XEP-0384/OMEMO). Servers MAY require authentication or signing for scheduling requests depending on policy.</p>
+<h3 id="73-recurrence">7.3 Recurrence</h3>
+<p>Recurrence rules MAY be expressed using a reduced iCalendar RFC 5545-like format within <code>&lt;recurrence&gt;</code>. For interoperability, schedulers SHOULD support at least simple daily/weekly/monthly recurrences and an optional <code>count</code> or <code>until</code> parameter.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;recurrence&gt;</span>FREQ=MONTHLY;BYMONTHDAY=1;COUNT=12<span style="color:#f92672">&lt;/recurrence&gt;</span>
+</span></span></code></pre></div><p>Full iCalendar semantics are out of scope, but servers MAY support them and advertise support in disco info.</p>
+<h2 id="8-errors">8. Errors</h2>
+<p>If a server cannot accept the scheduling request, it SHOULD reply with a suitable stanza error. Typical errors include:</p>
+<ul>
+<li><code>feature-not-implemented</code> — the server does not support scheduling.</li>
+<li><code>policy-violation</code> — request exceeds quota or scheduling window.</li>
+<li><code>not-allowed</code> — client lacks permission to schedule to the target JID.</li>
+<li><code>bad-request</code> — malformed timestamp or invalid recurrence rule.</li>
+</ul>
+<h2 id="9-status-queries-and-management">9. Status Queries and Management</h2>
+<p>Clients SHOULD be able to query the status of scheduled jobs via IQ <code>get</code> to the scheduler JID:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;iq</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#39;scheduler.example.org&#39;</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#39;get&#39;</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#39;q1&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;schedule-query</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:scheduling:0&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;id&gt;</span>job-5678<span style="color:#f92672">&lt;/id&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/schedule-query&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/iq&gt;</span>
+</span></span></code></pre></div><p>Server response:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;iq</span> <span style="color:#a6e22e">from=</span><span style="color:#e6db74">&#39;scheduler.example.org&#39;</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#39;result&#39;</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#39;q1&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;schedule-query</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:scheduling:0&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;id&gt;</span>job-5678<span style="color:#f92672">&lt;/id&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;status&gt;</span>scheduled<span style="color:#f92672">&lt;/status&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;deliver-at&gt;</span>2025-12-01T09:00:00Z<span style="color:#f92672">&lt;/deliver-at&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;created&gt;</span>2025-09-14T11:15:00Z<span style="color:#f92672">&lt;/created&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/schedule-query&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/iq&gt;</span>
+</span></span></code></pre></div><h3 id="91-cancellation">9.1 Cancellation</h3>
+<p>To cancel a job, send an IQ <code>set</code> with <code>&lt;cancel/&gt;</code> containing the job id:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;iq</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#39;scheduler.example.org&#39;</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#39;set&#39;</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#39;c1&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;schedule</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:scheduling:0&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;cancel&gt;</span>job-5678<span style="color:#f92672">&lt;/cancel&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/schedule&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/iq&gt;</span>
+</span></span></code></pre></div><p>Reply with a <code>result</code> containing the updated status.</p>
+<h2 id="10-delivery-semantics">10. Delivery Semantics</h2>
+<p>When the scheduled time arrives, the scheduler MUST deliver the message as if the originating client had sent it at that time. The delivered stanza SHOULD include a <code>&lt;delay/&gt;</code> (XEP-0203) only if the message was stored offline after being sent by a client earlier; in the scheduling model, the delivered message SHOULD include a <code>&lt;scheduled-by/&gt;</code> element indicating the scheduler JID and job id, to aid client UX in showing that the message was scheduled.</p>
+<p>Example delivered stanza:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;message</span> <span style="color:#a6e22e">from=</span><span style="color:#e6db74">&#39;me@example.com&#39;</span> <span style="color:#a6e22e">to=</span><span style="color:#e6db74">&#39;alice@example.org&#39;</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#39;chat&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;body&gt;</span>Happy birthday!<span style="color:#f92672">&lt;/body&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;scheduled-by</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#39;urn:xmpp:scheduling:0&#39;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;scheduler&gt;</span>scheduler.example.org<span style="color:#f92672">&lt;/scheduler&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;id&gt;</span>job-5678<span style="color:#f92672">&lt;/id&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;delivered-at&gt;</span>2025-12-01T09:00:01Z<span style="color:#f92672">&lt;/delivered-at&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&lt;/scheduled-by&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/message&gt;</span>
+</span></span></code></pre></div><p>If delivery fails (e.g., target unavailable), the scheduler SHOULD retry according to its policy and MAY send a status update to the originator.</p>
+<h2 id="11-privacy-and-access-control">11. Privacy and Access Control</h2>
+<p>Servers and scheduler components MUST authenticate scheduling requests using normal XMPP authentication methods. Servers SHOULD provide controls allowing users to:</p>
+<ul>
+<li>Approve or deny scheduling requests targeted at them (anti-spam).</li>
+<li>Limit who can schedule messages to a user (roster-only, contacts-only, everyone).</li>
+<li>Set quotas on number of scheduled jobs and maximum scheduling window (e.g., no more than 1 year into the future).</li>
+</ul>
+<p>Schedulers MUST not expose scheduled message contents to unauthorized parties. For privacy-sensitive content, clients SHOULD use end-to-end encryption (OMEMO or OpenPGP) and sign or otherwise authenticate scheduling requests to prevent tampering.</p>
+<h2 id="12-security-considerations">12. Security Considerations</h2>
+<ul>
+<li><strong>Authentication &amp; Authorization:</strong> Only authenticated users SHOULD be permitted to schedule messages. Authorization policies for scheduling to other JIDs MUST be enforced by the scheduler.</li>
+<li><strong>Replay and Tampering:</strong> Scheduling requests that include message bodies SHOULD be signed or encrypted to prevent tampering between scheduling and delivery. Servers MAY refuse unsigned scheduling of messages for recipients that require encryption.</li>
+<li><strong>Resource Exhaustion:</strong> Schedulers MUST implement quotas and rate-limiting to avoid DoS via large numbers of scheduled jobs.</li>
+<li><strong>Privacy Leakage:</strong> Servers that persist scheduled messages are responsible for their secure storage and for complying with jurisdictional retention laws.</li>
+</ul>
+<h2 id="13-iana-considerations">13. IANA Considerations</h2>
+<p>This XEP requests the registration of the XML namespace <code>urn:xmpp:scheduling:0</code> and that the feature be added to the list of XMPP advertising features.</p>
+<h2 id="14-examples">14. Examples</h2>
+<p>Several usage examples are provided in-line above. Additional examples for recurring schedules, cancellation flows, and error handling are included in an appendix (omitted from this draft).</p>
+<h2 id="15-backwards-compatibility">15. Backwards Compatibility</h2>
+<p>Clients that do not understand scheduling SHOULD ignore <code>&lt;schedule/&gt;</code> child elements per normal stanza-ignorance rules. When sending inline scheduling, clients SHOULD query server support first or fallback to client-side scheduling.</p>
+<h1 id="appendix-a-document-information">Appendix A: Document Information</h1>
+<p>Series: XEP
+Number: XXXX
+Publisher: XMPP Standards Foundation
+Status: Experimental
+Type: Standards Track
+Version: 1.0.0
+Last Updated: 2025-09-14
+Approving Body: XMPP Council
+Dependencies: XMPP Core, XEP-0030, XEP-0060, XEP-0163, XEP-0082, XEP-203, XEP-0374, XEP-384
+Supersedes: None
+Superseded By: None
+Short Name: scheduling</p>
+<h2 id="16-open-questions--implementation-notes">16. Open Questions / Implementation Notes</h2>
+<ul>
+<li>How far into the future SHOULD servers accept scheduled jobs? (Suggested default: 1 year; server-configurable.)</li>
+<li>Should servers support full iCalendar recurrence rules, or a limited subset tailored to messaging (e.g., simple daily/weekly repeats)?</li>
+</ul>
+
+</article>
+
+                
+    
+    
+        This is footer.
+You can edit this in ../nostyleplease/layouts/footer.md
+    
+
+
+            </div>
+        </main>
+    </body>
+</html>

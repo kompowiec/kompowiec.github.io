@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on kompowiec2</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on kompowiec2</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <copyright>Copyright © 2025 kompowiec2. Verbatim copying and redistribution of this entire page are permitted provided this notice is preserved. Verbatim copying and redistribution of any of the content is permitted under the Creative Commons Noderivs license version 3.0 or later.</copyright>
+    <lastBuildDate>Sun, 14 Sep 2025 22:55:52 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>XEP-XXXX: Message Scheduling</title>
+      <link>http://localhost:1313/posts/xep/</link>
+      <pubDate>Sun, 14 Sep 2025 22:55:52 +0200</pubDate>
+      <guid>http://localhost:1313/posts/xep/</guid>
+      <description>Abstract: This document defines an XMPP protocol extension for schedule future sends. Authors: Kompowiec2 Copyright: © 1999 – 2025 XMPP Standards Foundation. SEE LEGAL NOTICES. Status Active Type: Standards Track Version 1.0.0 (2025-09-14) 1. Summary This XEP defines a standard mechanism for scheduling the delivery of XMPP messages at a specific future time or after a specified delay. It provides a client- and server-compatible protocol for scheduling one-off and recurring messages, support for time zones and absolute timestamps, status queries, cancellation, and policy controls for servers and components that choose to implement scheduling.</description>
+    </item>
+    <item>
+      <title>How to deal with trolling - the one question that breaks them: why it matters, for you?</title>
+      <link>http://localhost:1313/posts/trolling/</link>
+      <pubDate>Sun, 14 Sep 2025 13:01:46 +0100</pubDate>
+      <guid>http://localhost:1313/posts/trolling/</guid>
+      <description>Energy vampires, authoritarianism, trolls, propagandist and just other toxic people usually run on:&#xA;Attention Validation Drama Control. I don&amp;#39;t any of these, my goal is just peace. Especially trolls, they are not just any rude person. A troll deliberately says/does things to provoke an emotional reaction. They usually don’t believe what they’re saying — they just want attention and they can&amp;#39;t be shamed, reasoned, satire, they know they’re being absurd.</description>
+    </item>
+  </channel>
+</rss>

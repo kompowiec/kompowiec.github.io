@@ -1,0 +1,11 @@
+[[entries]]
+title = "kompowiec2 socials"
+  [[entries.entries]]
+  title = "<a href='https://www.youtube.com/@kompowiec2-alt'>YouTube</a> <a href='https://github.com/kompowiec'>GitHub</a> <a href='https://kompowiec.github.io/index.xml'>RSS</a>"
+[[entries]]
+title = "all posts"
+  [entries.post_list]
+  limit = 5
+  show_more = true
+  show_more_text = "See archive..."
+  show_more_url = "posts"
