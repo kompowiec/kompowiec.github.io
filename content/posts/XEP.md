@@ -1,7 +1,7 @@
 +++
 title = 'XEP-XXXX: Message Scheduling'
 date = 2025-09-14T22:55:52+02:00
-draft = true
+draft = false
 +++
 * **Abstract**: This document defines an XMPP protocol extension for schedule future sends.
 * **Authors**: Kompowiec2
